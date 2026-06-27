@@ -187,6 +187,7 @@ h3 {
 .profile-card,
 .work-card,
 .note-list article,
+.stance,
 .contact {
   border: 2px solid var(--ink);
   background: rgba(255, 248, 232, 0.9);
@@ -295,18 +296,68 @@ h3 {
 
 .note-list {
   display: grid;
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .note-list article {
-  padding: 24px 28px;
+  position: relative;
+  padding: 26px 28px 28px;
 }
 
-.note-list time {
+.note-list article:first-child,
+.note-list article:last-child {
+  grid-column: 1 / -1;
+}
+
+.note-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 32px;
+  margin-bottom: 14px;
+  border: 2px solid var(--accent);
   color: var(--accent);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.stance {
+  background:
+    linear-gradient(135deg, rgba(255, 248, 232, 0.94), rgba(234, 217, 189, 0.82)),
+    var(--paper);
+}
+
+.stance-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.stance-list li {
+  position: relative;
+  padding: 44px 18px 20px;
+  border: 2px solid var(--ink);
+  background: rgba(255, 248, 232, 0.88);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.stance-list li::before {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  width: 22px;
+  height: 6px;
+  background: var(--accent-2);
+  box-shadow: 28px 0 0 var(--green);
+  content: "";
 }
 
 .contact {
@@ -354,6 +405,16 @@ h3 {
   .hero-content p:not(.eyebrow) {
     margin-left: 0;
   }
+
+  .note-list,
+  .stance-list {
+    grid-template-columns: 1fr;
+  }
+
+  .note-list article:first-child,
+  .note-list article:last-child {
+    grid-column: auto;
+  }
 }
 
 @media (max-width: 560px) {
@@ -369,5 +430,15 @@ h3 {
   .work-card,
   .note-list article {
     padding: 22px;
+  }
+
+  .note-list,
+  .stance-list {
+    grid-template-columns: 1fr;
+  }
+
+  .note-list article:first-child,
+  .note-list article:last-child {
+    grid-column: auto;
   }
 }

@@ -296,6 +296,18 @@ h3 {
     repeating-linear-gradient(90deg, transparent 0 12px, rgba(255, 248, 232, 0.28) 12px 14px);
 }
 
+.work-card:nth-child(4)::before {
+  background:
+    linear-gradient(135deg, rgba(90, 55, 38, 0.72), rgba(213, 154, 85, 0.42)),
+    repeating-linear-gradient(90deg, transparent 0 12px, rgba(255, 248, 232, 0.28) 12px 14px);
+}
+
+.work-card:nth-child(5)::before {
+  background:
+    linear-gradient(135deg, rgba(109, 118, 81, 0.68), rgba(183, 96, 63, 0.46)),
+    repeating-linear-gradient(90deg, transparent 0 12px, rgba(255, 248, 232, 0.28) 12px 14px);
+}
+
 .work-number {
   color: var(--terracotta);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

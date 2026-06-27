@@ -270,6 +270,18 @@ h3 {
     repeating-linear-gradient(90deg, transparent 0 12px, rgba(255, 248, 232, 0.26) 12px 14px);
 }
 
+.work-card:nth-child(4)::before {
+  background:
+    linear-gradient(135deg, rgba(184, 100, 58, 0.68), rgba(104, 122, 81, 0.38)),
+    repeating-linear-gradient(90deg, transparent 0 12px, rgba(255, 248, 232, 0.26) 12px 14px);
+}
+
+.work-card:nth-child(5)::before {
+  background:
+    linear-gradient(135deg, rgba(104, 122, 81, 0.72), rgba(213, 154, 85, 0.46)),
+    repeating-linear-gradient(90deg, transparent 0 12px, rgba(255, 248, 232, 0.26) 12px 14px);
+}
+
 .work-number {
   color: var(--accent);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -291,6 +303,33 @@ h3 {
   font-weight: 900;
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.tools {
+  border-top: 2px solid var(--line);
+}
+
+.tool-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tool-list li {
+  display: grid;
+  min-height: 86px;
+  place-items: center;
+  padding: 14px;
+  border: 2px solid var(--ink);
+  background: rgba(255, 248, 232, 0.9);
+  box-shadow: 6px 7px 0 rgba(61, 45, 34, 0.12);
+  color: var(--green);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  text-align: center;
 }
 
 .note-list {
@@ -335,9 +374,7 @@ h3 {
   }
 
   .work-grid {
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
-    overflow-x: auto;
-    padding-bottom: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-content {
@@ -354,6 +391,10 @@ h3 {
   .hero-content p:not(.eyebrow) {
     margin-left: 0;
   }
+
+  .tool-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 560px) {
@@ -369,5 +410,10 @@ h3 {
   .work-card,
   .note-list article {
     padding: 22px;
+  }
+
+  .work-grid,
+  .tool-list {
+    grid-template-columns: 1fr;
   }
 }

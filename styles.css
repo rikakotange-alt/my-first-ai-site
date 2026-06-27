@@ -186,6 +186,12 @@ h3 {
   text-align: center;
 }
 
+.section-lead {
+  max-width: 680px;
+  margin: -12px auto 30px;
+  color: var(--muted);
+}
+
 .profile {
   display: grid;
   grid-template-columns: 0.78fr 1.42fr;
@@ -196,7 +202,7 @@ h3 {
 .profile-card,
 .work-card,
 .note-list article,
-.tool-grid article,
+.tool-grid li,
 .goal-list li,
 .instagram {
   border: 2px solid var(--espresso);
@@ -247,8 +253,17 @@ h3 {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 22px;
+}
+
+.work-card {
+  grid-column: span 2;
+}
+
+.work-card:nth-child(4),
+.featured-work {
+  grid-column: span 3;
 }
 
 .work-card {
@@ -292,7 +307,6 @@ h3 {
 .work-card p,
 .profile-card p,
 .note-list p,
-.tool-grid p,
 .goal-list p,
 .instagram p {
   color: var(--muted);
@@ -326,10 +340,17 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.tool-grid article {
-  padding: 24px;
+.tool-grid li {
+  padding: 22px 18px;
+  color: var(--espresso);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+  font-weight: 900;
+  text-align: center;
 }
 
 .goals {
@@ -397,14 +418,14 @@ h3 {
   }
 
   .work-grid {
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
-    overflow-x: auto;
-    padding-bottom: 14px;
-    scroll-snap-type: x proximity;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: visible;
   }
 
-  .work-card {
-    scroll-snap-align: start;
+  .work-card,
+  .work-card:nth-child(4),
+  .featured-work {
+    grid-column: auto;
   }
 
   .tool-grid {
@@ -442,7 +463,7 @@ h3 {
 
   .work-card,
   .note-list article,
-  .tool-grid article,
+  .tool-grid li,
   .goal-list li {
     padding: 22px;
   }

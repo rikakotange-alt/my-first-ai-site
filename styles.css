@@ -496,3 +496,12 @@ h3 {
     min-height: 140px;
   }
 }
+.work-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  display: block;
+  border: 1px solid rgba(61, 45, 34, 0.35);
+  background: #ead9bd;
+  margin-bottom: 18px;
+}

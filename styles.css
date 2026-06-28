@@ -513,3 +513,11 @@ h3 {
 .work-card:has(.work-thumb) .work-thumb {
   margin-top: 0;
 }
+.work-card.has-image::before,
+.work-card.has-image .work-thumbnail {
+  display: none;
+}
+
+.work-card.has-image .work-thumb {
+  margin-top: 0;
+}

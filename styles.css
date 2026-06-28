@@ -505,3 +505,11 @@ h3 {
   background: #ead9bd;
   margin-bottom: 18px;
 }
+.work-card:has(.work-thumb)::before {
+  display: none;
+  content: none;
+}
+
+.work-card:has(.work-thumb) .work-thumb {
+  margin-top: 0;
+}

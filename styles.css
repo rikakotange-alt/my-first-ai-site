@@ -550,3 +550,39 @@ h3 {
   line-height: 1.8;
   color: #6f6258;
 }
+.work-index {
+  margin-top: 24px;
+  padding: 18px 20px;
+  background: rgba(255, 248, 235, 0.75);
+  border: 1px solid rgba(120, 88, 60, 0.18);
+  border-radius: 16px;
+}
+
+.work-index p {
+  margin: 0 0 8px;
+  color: #5b3f2f;
+}
+
+.work-index ol {
+  margin: 0;
+  padding-left: 1.4em;
+  line-height: 1.9;
+  color: #6f6258;
+}
+
+.work-links {
+  margin-top: 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.work-links a {
+  display: inline-block;
+  font-weight: 700;
+  color: #7a4d35;
+  text-decoration: none;
+}
+
+.work-links a:hover {
+  text-decoration: underline;
+}

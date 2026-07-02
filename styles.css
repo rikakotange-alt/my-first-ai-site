@@ -521,3 +521,32 @@ h3 {
 .work-card.has-image .work-thumb {
   margin-top: 0;
 }
+/* 研究カード制作フロー section */
+.paw-flow-section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+
+.wide-image-card {
+  width: 100%;
+  margin: 32px 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wide-image-card img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.wide-image-card figcaption {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #6f6258;
+}

@@ -606,3 +606,30 @@ h3 {
 .language-switcher button:hover {
   background: #efe3d3;
 }
+.codex-details {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border: 1px solid #d8c5aa;
+  border-radius: 16px;
+  background: #fffaf2;
+}
+
+.codex-details summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #4a3425;
+}
+
+.codex-details summary:hover {
+  color: #8a5a2b;
+}
+
+.codex-details p {
+  margin-top: 14px;
+}
+
+.codex-details pre {
+  margin-top: 14px;
+  white-space: pre-wrap;
+}

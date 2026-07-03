@@ -26,11 +26,15 @@
 
       <section class="hero-content" id="top">
         <p class="eyebrow">Retro AI Video Magazine</p>
-        <h1>AI動画制作の試行錯誤を記録する、学習ログポートフォリオ。</h1>
-        <p>
-          企画、構成、生成AIの活用、動画編集、投稿まで。
-          日々の試行錯誤や気づきを積み重ねながら、ショート動画や解説コンテンツを少しずつ形にしています。
-        </p>
+        <h1
+  data-ja="AI動画制作の試行錯誤を記録する、学習ログポートフォリオ。"
+  data-it="Un portfolio di apprendimento che documenta tentativi ed errori nella produzione di video con l’AI.">
+ </h1>
+        <p
+  data-ja="企画、構成、生成AIの活用、動画編集、投稿まで。日々の試行錯誤や気づきを積み重ねながら、ショート動画や解説コンテンツを少しずつ形にしています。"
+  data-it="Dalla pianificazione alla struttura, dall’uso dell’AI generativa al montaggio video e alla pubblicazione. Raccolgo tentativi, errori e intuizioni quotidiane, trasformandoli poco a poco in short video e contenuti esplicativi.">
+  企画、構成、生成AIの活用、動画編集、投稿まで。日々の試行錯誤や気づきを積み重ねながら、ショート動画や解説コンテンツを少しずつ形にしています。
+</p>
         <a class="primary-button" href="#works">作品を見る</a>
       </section>
     </header>
@@ -499,5 +503,20 @@ ChatGPT / Rikaさん
         <a href="https://www.instagram.com/italyaiwatch?igsh=MW5lMWd5N3JwdWFmdA==" target="_blank" rel="noopener noreferrer">Instagramで見る</a>
       </section>
     </main>
+
+    <script>
+  function setLanguage(lang) {
+    document.querySelectorAll('[data-ja][data-it]').forEach(function(element) {
+      element.textContent = element.getAttribute('data-' + lang);
+    });
+
+    localStorage.setItem('siteLanguage', lang);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const savedLanguage = localStorage.getItem('siteLanguage') || 'ja';
+    setLanguage(savedLanguage);
+  });
+</script>
   </body>
 </html>

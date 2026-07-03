@@ -3,19 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI動画制作 学習ログポートフォリオ</title>
+    <title>AI時代の観察・制作ログを記録するCreative Codex</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero">
       <nav class="nav" aria-label="メインナビゲーション">
-        <a class="logo" href="#top">AI Video Log</a>
+        <a class="logo" href="#top">Creative Codex</a></a>
         <div class="nav-links">
-          <a href="#profile">プロフィール</a>
-          <a href="#works">作品一覧</a>
-          <a href="#notes">学習メモ</a>
-          <a href="#tools">使用ツール</a>
-          <a href="#contact">Instagram</a>
+          <a 
+  href="#profile"
+  data-ja="プロフィール"
+  data-it="Profilo">
+  プロフィール
+</a>
+
+<a 
+  href="#works"
+  data-ja="作品一覧"
+  data-it="Lavori">
+  作品一覧
+</a>
+
+<a 
+  href="#notes"
+  data-ja="学習メモ"
+  data-it="Appunti">
+  学習メモ
+</a>
+
+<a 
+  href="#tools"
+  data-ja="使用ツール"
+  data-it="Strumenti">
+  使用ツール
+</a>
+
+<a 
+  href="#contact"
+  data-ja="Instagram"
+  data-it="Instagram">
+  Instagram
+</a>
         </div>
       </nav>
       
@@ -25,16 +54,25 @@
 </div>
 
       <section class="hero-content" id="top">
-        <p class="eyebrow">Retro AI Video Magazine</p>
-        <h1
-  data-ja="AI動画制作の試行錯誤を記録する、学習ログポートフォリオ。"
-  data-it="Un portfolio di apprendimento che documenta tentativi ed errori nella produzione di video con l’AI.">
- </h1>
-        <p
-  data-ja="企画、構成、生成AIの活用、動画編集、投稿まで。日々の試行錯誤や気づきを積み重ねながら、ショート動画や解説コンテンツを少しずつ形にしています。"
-  data-it="Dalla pianificazione alla struttura, dall’uso dell’AI generativa al montaggio video e alla pubblicazione. Raccolgo tentativi, errori e intuizioni quotidiane, trasformandoli poco a poco in short video e contenuti esplicativi.">
-  企画、構成、生成AIの活用、動画編集、投稿まで。日々の試行錯誤や気づきを積み重ねながら、ショート動画や解説コンテンツを少しずつ形にしています。
-</p>
+  <p 
+    class="eyebrow"
+    data-ja="Rika Creative Codex｜Paw Lab Field Notes"
+    data-it="Rika Creative Codex｜Appunti di campo del Paw Lab">
+    Rika Creative Codex｜Paw Lab Field Notes
+  </p>
+
+  <h1
+    data-ja="AI時代の観察・構造化・制作ログを記録する、Rika研究員のクリエイティブCodex。"
+    data-it="Un Codex creativo di Rika, dedicato all’osservazione, alla strutturazione e alla produzione nell’era dell’AI.">
+    AI時代の観察・構造化・制作ログを記録する、Rika研究員のクリエイティブCodex。
+  </h1>
+  <p
+    data-ja="日々のニュース、講座での学び、SNSでの反応、AIツールの実験を観察しながら、Canva・NotebookLM・CapCut・Codexを使って、研究カードや学習ログとして形にしています。"
+    data-it="Osservo notizie quotidiane, apprendimenti dai corsi, reazioni sui social ed esperimenti con strumenti AI, trasformandoli in schede di ricerca e diari di apprendimento con Canva, NotebookLM, CapCut e Codex.">
+    日々のニュース、講座での学び、SNSでの反応、AIツールの実験を観察しながら、Canva・NotebookLM・CapCut・Codexを使って、研究カードや学習ログとして形にしています。
+  </p>
+</section>
+      
         <a class="primary-button" href="#works">作品を見る</a>
       </section>
     </header>
@@ -504,12 +542,13 @@ ChatGPT / Rikaさん
       </section>
     </main>
 
-    <script>
+  <script>
   function setLanguage(lang) {
     document.querySelectorAll('[data-ja][data-it]').forEach(function(element) {
       element.textContent = element.getAttribute('data-' + lang);
     });
 
+    document.documentElement.lang = lang;
     localStorage.setItem('siteLanguage', lang);
   }
 
@@ -518,5 +557,6 @@ ChatGPT / Rikaさん
     setLanguage(savedLanguage);
   });
 </script>
+    
   </body>
 </html>

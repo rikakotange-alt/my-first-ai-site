@@ -3,156 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI時代の観察・制作ログを記録するCreative Codex</title>
+    <title>Rika Creative Codex｜Paw Lab Field Notes</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
+    <header class="hero" id="top">
       <nav class="nav" aria-label="メインナビゲーション">
-        <a class="logo" href="#top">Creative Codex</a></a>
+        <a class="logo" href="#top">Rika Creative Codex</a>
         <div class="nav-links">
-          <a 
-  href="#profile"
-  data-ja="プロフィール"
-  data-it="Profilo">
-  プロフィール
-</a>
-
-<a 
-  href="#works"
-  data-ja="作品一覧"
-  data-it="Lavori">
-  作品一覧
-</a>
-
-<a 
-  href="#notes"
-  data-ja="学習メモ"
-  data-it="Appunti">
-  学習メモ
-</a>
-
-<a 
-  href="#tools"
-  data-ja="使用ツール"
-  data-it="Strumenti">
-  使用ツール
-</a>
-
-<a 
-  href="#contact"
-  data-ja="Instagram"
-  data-it="Instagram">
-  Instagram
-</a>
+          <a href="#profile" data-ja="プロフィール" data-it="Profilo">プロフィール</a>
+          <a href="#codex-cards" data-ja="Codex Cards" data-it="Codex Cards">Codex Cards</a>
+          <a href="#works" data-ja="作品一覧" data-it="Lavori">作品一覧</a>
+          <a href="#learning-log" data-ja="学習ログ" data-it="Diario">学習ログ</a>
+          <a href="#tools" data-ja="使用ツール" data-it="Strumenti">使用ツール</a>
+          <a href="#contact" data-ja="Instagram" data-it="Instagram">Instagram</a>
         </div>
       </nav>
-      
-       <div class="language-switcher">
-  <button onclick="setLanguage('ja')">日本語</button>
-  <button onclick="setLanguage('it')">Italiano</button>
-</div>
 
-       <section class="hero-content" id="top">
-  <p 
-    class="eyebrow"
-    data-ja="Rika Creative Codex｜Paw Lab Field Notes"
-    data-it="Rika Creative Codex｜Appunti di campo del Paw Lab">
-    Rika Creative Codex｜Paw Lab Field Notes
-  </p>
+      <div class="language-switcher" aria-label="言語切り替え">
+        <button type="button" onclick="setLanguage('ja')">日本語</button>
+        <button type="button" onclick="setLanguage('it')">Italiano</button>
+      </div>
 
+      <section class="hero-content">
+        <p class="eyebrow" data-ja="Paw Lab Field Notes" data-it="Appunti di campo del Paw Lab">Paw Lab Field Notes</p>
         <h1
-    data-ja="AI時代の観察・構造化・制作ログを記録する、Rika研究員のクリエイティブCodex。"
-    data-it="Un Codex creativo di Rika, dedicato all’osservazione, alla strutturazione e alla produzione nell’era dell’AI.">
-    AI時代の観察・構造化・制作ログを記録する、Rika研究員のクリエイティブCodex。
-  </h1>
-  <p
-    data-ja="日々のニュース、講座での学び、SNSでの反応、AIツールの実験を観察しながら、Canva・NotebookLM・CapCut・Codexを使って、研究カードや学習ログとして形にしています。"
-    data-it="Osservo notizie quotidiane, apprendimenti dai corsi, reazioni sui social ed esperimenti con strumenti AI, trasformandoli in schede di ricerca e diari di apprendimento con Canva, NotebookLM, CapCut e Codex.">
-    日々のニュース、講座での学び、SNSでの反応、AIツールの実験を観察しながら、Canva・NotebookLM・CapCut・Codexを使って、研究カードや学習ログとして形にしています。
-  </p>
-</section>
-      
+          data-ja="AI時代の観察・構造化・制作ログを記録する、Rika研究員のCreative Codex。"
+          data-it="Il Creative Codex di Rika, dedicato a osservazione, struttura e produzione nell’era dell’AI."
+        >AI時代の観察・構造化・制作ログを記録する、Rika研究員のCreative Codex。</h1>
+        <p
+          data-ja="日々のニュース、講座での学び、SNSでの反応、AIツールの実験を観察しながら、Canva・NotebookLM・CapCut・Codexを使って研究カードや学習ログとして形にしています。"
+          data-it="Osservo notizie, apprendimenti, reazioni sui social ed esperimenti con strumenti AI, trasformandoli in schede di ricerca e diari creativi con Canva, NotebookLM, CapCut e Codex."
+        >日々のニュース、講座での学び、SNSでの反応、AIツールの実験を観察しながら、Canva・NotebookLM・CapCut・Codexを使って研究カードや学習ログとして形にしています。</p>
         <a class="primary-button" href="#works">作品を見る</a>
       </section>
     </header>
-
-      <section class="portfolio-section codex-card-ui-section" id="codex-cards">
-  <div class="section-label">CODEX CARD UI</div>
-
-  <h2>1つのカードに、1つのコンセプト</h2>
-
-  <p class="section-lead">
-    Codexでは、学び・観察・制作プロセスを1つずつカード化して保存しています。
-    1枚のカードには1つのコンセプトだけを載せることで、あとから見返しやすく、
-    SNS投稿や動画、研究カードへ展開しやすい形にしています。
-  </p>
-
-  <div class="codex-card-grid">
-    <article class="codex-card">
-      <span class="codex-card-category">Learning Log</span>
-      <h3>Canvaは思考をカード化する道具</h3>
-      <p>
-        観察や学びを、研究カード・図解・SNS投稿に変換する制作の土台。
-      </p>
-      <div class="codex-card-tags">
-        <span>Canva</span>
-        <span>学習ログ</span>
-        <span>研究カード</span>
-      </div>
-    </article>
-
-    <article class="codex-card">
-      <span class="codex-card-category">Tool Workflow</span>
-      <h3>CanvaからCapCutへつなげる</h3>
-      <p>
-        Canvaで作ったカードや図解を、CapCutでショート動画に展開する流れ。
-      </p>
-      <div class="codex-card-tags">
-        <span>CapCut</span>
-        <span>動画化</span>
-        <span>SNS</span>
-      </div>
-    </article>
-
-    <article class="codex-card">
-      <span class="codex-card-category">Paw Lab</span>
-      <h3>パウ所長はナビゲーター</h3>
-      <p>
-        パウ所長は主役ではなく、作品の要点を案内する研究所の地図係。
-      </p>
-      <div class="codex-card-tags">
-        <span>パウ研究所</span>
-        <span>世界観</span>
-        <span>案内役</span>
-      </div>
-    </article>
-  </div>
-</section>
-
-      <section class="portfolio-section codex-design-guide-section" id="codex-card-design-guide">
-  <div class="section-label">CODEX CARD DESIGN GUIDE</div>
-
-  <h2>Codex Cards デザインガイド</h2>
-
-  <p class="section-lead">
-    Codexでは、カードの中身だけでなく、見た目の世界観もそろえていきます。
-    色・書体・余白・モチーフを統一しながら、1枚のカードに1つのコンセプトを載せ、
-    学習ログ・研究カード・制作フロー・作品記録を、あとから見返しやすい形で保存します。
-  </p>
-
-  <figure class="wide-image-card">
-    <img
-      src="paw-lab_codex-cards-design-guide.png"
-      alt="Codex Cardsのデザインガイド。1つのカードに1つのコンセプトを載せ、研究所の世界観をそろえるための説明図"
-    >
-    <figcaption>
-      Codex Cardsの基本デザイン方針。
-      カードごとに1つのコンセプトを置き、カテゴリ・タイトル・一言説明・画像・タグ・詳しく見るボタンをそろえることで、
-      Codex全体を研究カードが並ぶ知の標本棚として育てていきます。
-    </figcaption>
-  </figure>
-</section>
 
     <main>
       <section class="section profile" id="profile">
@@ -160,1088 +45,215 @@
           <p class="section-label">Profile</p>
           <h2>プロフィール</h2>
         </div>
-        <div class="profile-card">
-          <div class="avatar" aria-hidden="true">AI</div>
+        <article class="profile-card">
+          <div class="avatar" aria-hidden="true">R</div>
           <div>
-            <h3>観察者ノート</h3>
-            <p>AI動画制作を学びながら、企画・構成・生成AIの活用・動画編集・投稿までの流れを少しずつ実践しています。
-            まだ学習中ですが、日々の試行錯誤や気づきを記録しながら、ショート動画や解説コンテンツを制作しています。
-            成果物だけでなく、制作の課程や改善点も大切にしながら、自分らしい表現を育てていきたいです。
-
-            制作スタンス
-            ・完成度より、まず形にすることを大切にする
-            ・成果物だけでなく、学びの課程も記録する
-            ・AIツールを組み合わせて、自分にある制作フローを探す
-            ・日常の観察や気づきを、動画や文章のテーマに変換する
-            ・少しずつ改善しながら、自分らしいポートフォリオを育て
+            <h3>Rika研究員｜Human OS Field Researcher</h3>
+            <p>
+              AI動画制作を学びながら、企画・構成・生成AIの活用・動画編集・投稿までの流れを実践しています。
+              成果物だけでなく、つまずき、改善点、制作の過程も記録し、パウ人間OS・社会人類学研究所の視点で再構成しています。
             </p>
             <ul class="tags" aria-label="学習テーマ">
-              <li>企画設計</li>
-              <li>動画生成AI</li>
-              <li>編集ワークフロー</li>
-              <li>SNS動画</li>
+              <li>観察</li>
+              <li>構造化</li>
+              <li>Canva</li>
+              <li>CapCut</li>
+              <li>Codex</li>
             </ul>
           </div>
+        </article>
+      </section>
+
+      <section class="section codex-card-ui-section" id="codex-cards">
+        <p class="section-label">Codex Card UI</p>
+        <h2>1つのカードに、1つのコンセプト</h2>
+        <p class="section-intro">
+          Codexは、長文を並べる倉庫ではなく、研究カードが並ぶ「知の標本棚」として整理します。
+          学び・観察・制作プロセスを1つずつカード化することで、あとから見返しやすく、SNS投稿や動画へ展開しやすい形にしています。
+        </p>
+
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span>1</span>
+            <h3>1カード = 1コンセプト</h3>
+            <p>1枚のカードには、1つの考え・学び・観察だけを載せる。</p>
+          </article>
+          <article class="principle-card">
+            <span>2</span>
+            <h3>1セクション = 1テーマ群</h3>
+            <p>似たカードをテーマごとにまとめ、見返しやすくする。</p>
+          </article>
+          <article class="principle-card">
+            <span>3</span>
+            <h3>1ページ = 世界観の棚</h3>
+            <p>ページ全体で、思想・制作フロー・作品のつながりを見せる。</p>
+          </article>
+        </div>
+
+        <div class="codex-card-grid">
+          <article class="codex-card">
+            <span class="codex-card-category">Learning Log</span>
+            <h3>Canvaは思考をカード化する道具</h3>
+            <p>講座で学んだことや制作中の気づきを、研究カード・図解・SNS投稿に変換する制作の土台。</p>
+            <div class="codex-card-tags"><span>Canva</span><span>学習ログ</span><span>研究カード</span></div>
+          </article>
+          <article class="codex-card">
+            <span class="codex-card-category">Tool Workflow</span>
+            <h3>CanvaからCapCutへつなげる</h3>
+            <p>Canvaで作ったカードや図解を、CapCutで30秒から60秒のショート動画へ展開する流れ。</p>
+            <div class="codex-card-tags"><span>CapCut</span><span>動画化</span><span>SNS</span></div>
+          </article>
+          <article class="codex-card">
+            <span class="codex-card-category">Paw Lab</span>
+            <h3>パウ所長はナビゲーター</h3>
+            <p>パウ所長は主役ではなく、作品の要点を指示棒で案内する研究所の地図係。</p>
+            <div class="codex-card-tags"><span>パウ研究所</span><span>世界観</span><span>案内役</span></div>
+          </article>
         </div>
       </section>
 
-     <section class="section works" id="works">
-  <p class="section-label">Works</p>
-  <h2>作品一覧</h2>
-  <p class="section-intro">
-    AI動画制作の学習過程で作った作品や、これから形にしていきたいテーマをまとめています。
-    完成品だけでなく、企画・構成・編集の試行錯誤も大切にしています。
-  </p>
-
-  <div class="work-grid">
-    <article class="work-card has-image">
-      <img src="coffee-trivia-thumb.png" alt="コーヒー雑学ショート動画のサムネイル" class="work-thumb">
-
-      <div class="work-content">
-        <h3>コーヒー雑学ショート動画</h3>
-        <p>
-          ChatGPTで構成を作り、フリー素材を使ってCapCutで編集した初めての学習ログ動画。
+      <section class="section codex-design-guide-section" id="codex-card-design-guide">
+        <p class="section-label">Codex Card Design Guide</p>
+        <h2>Codex Cards デザインガイド</h2>
+        <p class="section-intro">
+          カードの中身だけでなく、見た目の世界観もそろえていきます。
+          色・書体・余白・モチーフを統一し、パウ研究所のカード棚として育つように整えます。
         </p>
-        <a href="https://www.instagram.com/italyaiwatch/reel/DaI36t9s_Kb/" target="_blank" rel="noopener noreferrer">
-          Instagramで見る
-        </a>
-      </div>
-    </article>
+        <figure class="wide-image-card">
+          <img src="paw-lab_codex-cards-design-guide.png" alt="Codex Cardsのデザインガイド。1つのカードに1つのコンセプトを載せ、研究所の世界観をそろえるための説明図" />
+          <figcaption>
+            Codex Cardsの基本デザイン方針。カテゴリ・タイトル・一言説明・画像・タグ・詳しく見るボタンをそろえ、研究カードが並ぶ知の標本棚として整理していく。
+          </figcaption>
+        </figure>
+      </section>
 
-    <article class="work-card has-image">
-      <img src="Notebook-thumb.png" alt="NotebookLM音声素材ショートのサムネイル" class="work-thumb">
+      <section class="section operation-section" id="operating-design">
+        <p class="section-label">Operating Design</p>
+        <h2>パウ研究所の制作OS</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="Creative_Philosophy_Map_Codex_01.png" alt="AIクリエイティブ思想設計図" />
+            <div>
+              <h3>思想地図｜Philosophy Map</h3>
+              <p>AI時代の制作思想、学習ログ、研究カード、作品アーカイブの全体像を見える地図にする。</p>
+              <a href="Creative_Philosophy_Map_Codex_01.png" target="_blank" rel="noopener">画像を見る</a>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="paw-lab_research-card-production-flow.png" alt="研究カードの制作フロー" />
+            <div>
+              <h3>研究カード制作フロー</h3>
+              <p>観察から研究カード化、ショート動画、ロング動画、Codexアーカイブまでの流れを整理。</p>
+              <a href="paw-lab_research-card-production-flow.png" target="_blank" rel="noopener">画像を見る</a>
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="PawLab_Research_Team_Members_Rika_v1.png" alt="パウ研究所の研究チーム紹介" />
+            <div>
+              <h3>研究チームメンバー紹介</h3>
+              <p>Rika研究員が観察し、研究員たちが分析を補助し、パウ所長がまとめる基本体制。</p>
+              <a href="PawLab_Research_Team_Members_Rika_v1.png" target="_blank" rel="noopener">画像を見る</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <div class="work-content">
-        <h3>NotebookLM音声素材ショート</h3>
-        <p>
-          NotebookLMで生成した音声を素材にして、CapCutで背景映像とテロップを組み合わせた実験動画。
+      <section class="section works" id="works">
+        <p class="section-label">Works</p>
+        <h2>作品一覧</h2>
+        <p class="section-intro">
+          完成品だけでなく、企画・構成・編集の試行錯誤も含めて、制作ログとして保存しています。
         </p>
-        <a href="https://www.instagram.com/italyaiwatch/reel/DaI3nEas8HR/" target="_blank" rel="noopener noreferrer">
-          Instagramで見る
-        </a>
-      </div>
-    </article>
-
-    <article class="work-card has-image">
-      <img src="dog-economy-thumb.png" alt="肉球経済ショート動画のサムネイル" class="work-thumb">
-
-      <div class="work-content">
-        <h3>肉球経済/パウ所長</h3>
-        <p>
-          「かわいいは経済を動かす」をテーマに、
-          パウ所長が30秒で肉球経済を解説するショート動画企画。
-        </p>
-        <a href="https://www.instagram.com/italyaiwatch/" target="_blank" rel="noopener noreferrer">
-          Instagramで更新予定
-        </a>
-        
-<a href="nikukyu-storyboard1.png.png" target="_blank" rel="noopener noreferrer">
-  📝 ストーリーボード①を見る
-</a>
-
-<a href="nikukyu-storyboard2.png.png" target="_blank" rel="noopener noreferrer">
-  📝 ストーリーボード②を見る
-</a>
-
-<a href="nikukyu-storyboard3.png.png" target="_blank" rel="noopener noreferrer">
-  📝 ストーリーボード③を見る
-</a>
-      </div>
-    </article>
-    
-    <article class="work-card has-image">
-      <img src="sirodashi-thumb.png" alt="白だしアニメ風CM構成のサムネイル" class="work-thumb">
-
-      <div class="work-content">
-        <h3>白だしアニメ風CM構成</h3>
-        <p>
-          母と高校生の息子のお弁当をテーマにした、15秒アニメ風CMの構成案。
-        </p>
-        <a href="https://www.instagram.com/italyaiwatch/" target="_blank" rel="noopener noreferrer">
-          Instagramで更新予定
-        </a>
-      </div>
-    </article>
-
-    <article class="work-card has-image">
-      <img src="learninglog.thum.png" alt="AI動画制作ゼミ学習ログのサムネイル" class="work-thumb">
-
-      <div class="work-content">
-        <h3>AI動画制作の学習ログ</h3>
-        <p>
-          AI動画制作の学習を進めながら、自分で試した制作物や気づき、改善点を記録するログ。
-        </p>
-        <a href="https://www.instagram.com/italyaiwatch/" target="_blank" rel="noopener noreferrer">
-          Instagramで更新予定
-        </a>
-
-         </div>
-    </article>
-
-        <article class="work-card has-image">
-  <img src="ai-cognitive-design-thumb.png" alt="AI時代の認知設計" class="work-thumb">
-
-  <div class="work-content">
-    <h3>AI時代の認知設計</h3>
-
-    <p>
-      ショート動画が人の認知や感情に働きかけ、
-      コメント・保存・シェアを通じて拡散していく仕組みを
-      図解として整理した構成資料です。
-    </p>
-
-    <a href="ai-cognitive-design.png" target="_blank" rel="noopener noreferrer">
-      📖 構成図を見る
-    </a>
-     </div>
-    </article>
-
-    <article class="work-card has-image">
-  <img src="capcut-ai-flow-thumb.png" alt="CapCut AIツール制作フロー" class="work-thumb">
-
-  <div class="work-content">
-    <h3>CapCut AIツール制作フロー</h3>
-
-    <p>
-      CapCutのAI機能を活用した
-      解説ショート動画制作の5ステップを図解。
-      企画から編集までの流れを整理した制作資料です。
-    </p>
-
-    <a href="capcut-ai-flow1.png" target="_blank" rel="noopener noreferrer">
-      📖 制作フロー①を見る
-    </a>
-
-     <a href="capcut-ai-flow2.png" target="_blank" rel="noopener noreferrer">
-      📖 制作フロー②を見る
-    </a>
-      </div>
-    </article>
-
-    <article class="work-card has-image">
-  <img src="creative-system-thumb.png" alt="AIクリエイティブ運営設計図" class="work-thumb">
-
-  <div class="work-content">
-    <h3>AIクリエイティブ運営設計図</h3>
-    <p>
-      Codexを母艦に、Canva・Premiere・Instagram・YouTubeを組み合わせながら、
-      学習ログ・制作フロー・研究チーム設定をひとつの運営設計ページとしてまとめています。
-    </p>
-    <a href="creative-system-map.png" target="_blank" rel="noopener noreferrer">
-      構成図を見る
-    </a>
-
-    <section class="operation-strategy">
-  <h2>今後の展望｜Codex × Canva Website 二本立て構想</h2>
-
-  <p>
-    今後は、CodexをRika Portfolioとして作品・学習ログ・制作思想を蓄積する母艦にし、
-    コンテンツが育ってきた段階で、Canva Websiteを
-    パウ人間OS・社会人類学研究所の公式サイトとして展開していく。
-  </p>
-
-      <section class="operation-strategy">
-  <h2>Research Team｜パウ人間OS・社会人類学研究所 メンバー紹介</h2>
-
-  <figure>
-    <img 
-      src="PawLab_Research_Team_Members_Rika_v1.png" 
-      alt="パウ人間OS・社会人類学研究所 研究チーム メンバー紹介"
-      style="width:100%; max-width:900px; border-radius:16px;"
-    >
-    <figcaption>
-      パウ所長を中心に、Rika研究員・モグ研究員・ミミ研究員・コタ研究員・パウBotが役割ごとに連携する研究チーム紹介。
-    </figcaption>
-  </figure>
-
-  <p>
-    パウ人間OS・社会人類学研究所は、AI時代の人間OSと社会構造の変化を観察・構造化・可視化するための架空研究所です。
-    Rika研究員が現場の違和感や気づきを観察し、研究チームの各メンバーがそれぞれの専門分野から整理・分析・翻訳・補助を行います。
-  </p>
-
-  <p>
-    このメンバー紹介では、研究所全体を導くパウ所長、現場観察を担当するRika研究員、
-    データ分析のモグ研究員、共感と安心OSを担当するミミ研究員、
-    探究と構造観察のコタ研究員、用語解説と補助を行うパウBotの役割を整理しています。
-  </p>
-
-  <h3>研究チームの基本構成</h3>
-
-  <pre><code>パウ所長
-研究所全体の統括・解説・まとめ役
-
-Rika研究員
-現場観察・構造化・可視化・発信の実践者
-
-モグ研究員
-コメントや反応の集計・分析・可視化担当
-
-ミミ研究員
-共感・安心・応援OSの視点から分析
-
-コタ研究員
-探究・構造観察・違和感の深掘り担当
-
-パウBot
-用語解説・辞典・補助・案内担当</code></pre>
-
-  <h3>研究の基本フロー</h3>
-
-  <pre><code>1. Rika研究員が観察する
-2. モグ研究員が集計する
-3. ミミ研究員が感情の流れを見る
-4. コタ研究員が構造を読む
-5. パウBotが用語を補足する
-6. パウ所長が研究結果をまとめる</code></pre>
-
-  <p>
-    研究チームは、単に情報を集めるだけではなく、
-    ニュース、SNS、コメント欄、日常の違和感、講座での学びを
-    「人間OS」や「社会構造」の変化として読み解いていきます。
-  </p>
-
-  <p>
-    Rika研究員の役割は、研究所の中心で現場の空気を拾い、
-    それを研究カード・図解・ショート動画・Codexアーカイブへとつなげることです。
-    その観察を、パウ所長と研究チームが支えることで、
-    パウ研究所の世界観と制作OSがひとつにつながっていきます。
-  </p>
-
-  <p class="paw-note">
-    🐾 パウ所長の研究メモ：Rika研究員の正式加入により、研究所は「観察する人間研究員」と
-    「構造を読む研究チーム」が連携する体制になったワン。ここから観察ログが、研究カードとしてどんどん育っていくワン。
-  </p>
-</section>
-
-      <section class="operation-strategy">
-  <h2>AI Tool Workflow｜Rika研究員のAIツール活用方法</h2>
-
-  <figure>
-    <img 
-      src="ai-tool-workflow-rika-codex-20260703.png" 
-      alt="Rika研究員のAIツール活用導線"
-      style="width:100%; max-width:900px; border-radius:16px;"
-    >
-    <figcaption>
-      観察・構造化・可視化・発信・蓄積をつなぐ、Rika研究員のAIツール活用フロー図。
-    </figcaption>
-  </figure>
-
-  <p>
-    Rika研究員のAIツール活用は、単なる動画編集やデザイン制作ではありません。
-    日々のニュース、SNS、コメント欄、講座での学び、日常の違和感を観察し、
-    それを構造化し、図解し、SNSやCodexに発信し、作品としてアーカイブしていく流れです。
-  </p>
-
-  <pre><code>観察する
-↓
-構造化する
-↓
-図解する
-↓
-SNSやWebで発信する
-↓
-作品としてアーカイブする</code></pre>
-
-  <p>
-    この流れの中心にあるのが、パウ人間OS・社会人類学研究所の制作OSです。
-    Canva、NotebookLM、CapCut、Codex、ChatGPTをそれぞれ役割ごとに使い分けることで、
-    観察が研究カードになり、研究カードが発信物になり、最終的にCodex母艦へ蓄積されていきます。
-  </p>
-
-  <h3>1. Canva｜見える研究ノートを作る土台</h3>
-  <p>
-    Canvaは、Rika研究員にとって単なるデザインツールではありません。
-    観察したこと、講座で学んだこと、SNSで気になった反応、コメント欄の違和感を、
-    研究カードや図解に変換するための土台です。
-  </p>
-
-  <h3>2. NotebookLM｜情報を整理し、研究素材に変える場所</h3>
-  <p>
-    NotebookLMは、AIニュース、講座メモ、制作メモ、コメント欄分析の素材などを整理し、
-    要約・FAQ・構成案・音声化・動画台本・研究カードの下書きへ変換する整理室です。
-    パウ研究所の世界観でいえば、モグ研究員の集計室です。
-  </p>
-
-  <h3>3. CapCut｜研究カードを動かす場所</h3>
-  <p>
-    CapCutは、CanvaやGPT Image2.0で作った研究カードや図解を、Instagramリール、TikTok、
-    YouTube、ショート解説動画、SNS向けの学習ログ動画に変換する編集室です。
-    まずは30〜60秒の短い動画で、研究カードを小さな舞台に乗せていきます。
-  </p>
-
-  <h3>4. Codex｜制作物と学習ログを保存する研究所アーカイブ</h3>
-  <p>
-    Codexは、作ったものをまとめる研究所アーカイブです。
-    Instagramやショート動画は流れていきますが、Codexに保存することで、
-    学びや作品が長期的なポートフォリオとして蓄積されていきます。
-  </p>
-
-        
-
-  <h3>Rika研究員向けAIツール活用の全体像</h3>
-
-  <pre><code>Canva
-観察や学びを図解・研究カード化する
-
-NotebookLM
-情報を整理し、要約・台本・音声化する
-
-CapCut
-研究カードや素材をショート動画にする
-
-Codex
-制作物と学習ログをアーカイブする
-
-ChatGPT / Rika
-構成、文章、分析、コード、投稿文を整える</code></pre>
-
-        <section class="operation-strategy">
-  <h2>Commune Posting OS｜学習コミュニティ投稿の意味</h2>
-
-  <figure>
-    <img 
-      src="Commune_Posting_OS_Trust_Visualization_PawLab_v1.png" 
-      alt="Commune Posting OS 学びの足あとを信頼の可視化へ"
-      style="width:100%; max-width:900px; border-radius:16px;"
-    >
-    <figcaption>
-      学習コミュニティへの投稿を、進捗報告ではなく「学びの足あと」として整理した研究カード。
-    </figcaption>
-  </figure>
-
-  <p>
-    DMMコミューンへの投稿は、単なる進捗報告ではない。
-    運営や講師の視点から見ると、受講生の投稿には、
-    学習の継続力、理解の深まり、つまずきのポイント、
-    自分の文脈への応用力、コミュニティへの貢献が表れている。
-  </p>
-
-  <p>
-    特に価値があるのは、綺麗にまとまった正解のレポートだけではない。
-    どこで迷い、どう考え、どう解決し、次にどう活かそうとしているかが見える投稿である。
-  </p>
-
-  <h3>研究テーマ</h3>
-
-  <pre><code>Commune Posting OS
-学習コミュニティ投稿の意味
-  学習ログは、信頼の可視化になるのか?</code></pre>
-
-  <h3>観察対象</h3>
-
-  <p>
-    DMMコミューンでの受講生の進捗報告、成果物投稿、学習ログ投稿。
-    一見すると「できました報告」に見える投稿の中に、
-    学習者の理解度、試行錯誤、自己解決力、応用力がどのように表れているのかを観察する。
-  </p>
-
-  <h3>今日の問い</h3>
-
-  <pre><code>学習コミュニティへの投稿は、ただの進捗報告なのか？
-それとも、信頼・応用力・継続力を可視化する行為なのか？</code></pre>
-
-  <h3>コミューン投稿の4つの価値</h3>
-
-  <div class="tool-grid">
-    <div class="tool-card">
-      <h4>1. つまずきログ</h4>
-      <p>
-        どこで止まり、何が分からず、どのように解決したのかを残すログ。
-        完成品だけでは見えない、学習プロセスの信頼が表れる。
-      </p>
-    </div>
-
-    <div class="tool-card">
-      <h4>2. 応用ログ</h4>
-      <p>
-        教材で学んだ内容を、自分の制作や発信にどう変換したかを記録するログ。
-        Rika研究員の場合は、Canva、CapCut、Codexへの応用が中心になる。
-      </p>
-    </div>
-
-    <div class="tool-card">
-      <h4>3. 成長ログ</h4>
-      <p>
-        以前の自分と比べて、何が分かるようになったか、どこが変わったかを可視化するログ。
-        小さな変化の積み重ねが、学習の軌跡になる。
-      </p>
-    </div>
-
-    <div class="tool-card">
-      <h4>4. 場づくりログ</h4>
-      <p>
-        感情や気づきを共有することで、他の受講生も反応しやすくなる投稿。
-        コミュニティの空気を少し柔らかくする役割もある。
-      </p>
-    </div>
-  </div>
-
-  <h3>Rika研究員に合う投稿スタイル</h3>
-
-  <p>
-    Rika研究員にとって相性がよいのは、
-    「つまずきログ × 応用ログ × 観察者ログ」の組み合わせである。
-  </p>
-
-  <pre><code>講座でここを学んだ
-↓
-この操作でつまずいた
-↓
-なぜつまずいたのか考えた
-↓
-自分の制作フローに置き換えた
-↓
-Canva / CapCut / Codexで応用した
-↓
-気づきをコミューンに投稿した</code></pre>
-
-  <p>
-    完成品だけで勝負するよりも、
-    どう考えたか、どこで迷ったか、どう構造化したかを出すことで、
-    Rika研究員らしい独自性が見えやすくなる。
-  </p>
-
-  <h3>見えてきた構造</h3>
-
-  <p>
-    学習コミュニティ投稿には、以下のような役割がある。
-  </p>
-
-  <pre><code>1. 学習ログ
-2. つまずきの記録
-3. 自己解決のプロセス
-4. 自分の文脈への応用
-5. 他の受講生への共有知
-6. 運営・講師への可視化
-7. Codexに残すための素材</code></pre>
-
-  <h3>分類OS</h3>
-
-  <pre><code>学習ログOS
-つまずき共有OS
-自己解決OS
-応用実験OS
-信頼可視化OS
-コミュニティ貢献OS</code></pre>
-
-  <h3>コミューンは流れる場所、Codexは残す場所</h3>
-
-  <p>
-    コミューンは流れる場所。
-    Codexは残す場所。
-  </p>
-
-      <figure>
-  <img 
-    src="Commune_Posting_OS_Field_Notes_Flow_PawLab_v2.png" 
-    alt="Commune Posting OS 学習コミュニティ投稿の循環フロー"
-    style="width:100%; max-width:900px; border-radius:16px;"
-  >
-  <figcaption>
-    コミューン投稿を、学び・つまずき・気づき・共有・Codex保存へつなげる流れとして整理した補助図解。
-  </figcaption>
-</figure>
-
-<p>
-  この図解では、コミューン投稿を「投稿して終わり」ではなく、
-  学びを共有し、反応を観察し、気づきを深め、最後にCodexへ保存する循環として整理している。
-</p>
-
-<p>
-  Rika研究員にとって、コミューンは学びを外に置く実験室であり、
-  Codexはその学びを研究ログとして残すアーカイブである。
-  だからこそ、日々の小さな投稿も、未来の制作素材やポートフォリオの種になっていく。
-</p>    
-
-  <p>
-    だから、日々の投稿はその場限りの報告ではなく、
-    後から制作ログやポートフォリオに変換できる研究素材でもある。
-  </p>
-
-  <p>
-    継続的に投稿することで、Rika研究員の学習プロセス、観察力、
-    制作スタイル、応用力が少しずつ可視化される。
-  </p>
-
-  <p>
-    それはすぐに案件につながるものではないかもしれない。
-    けれど、運営や講師から見て、
-    「声をかけやすい人」「応援しやすい人」「学びを形にできる人」として見えやすくなる。
-  </p>
-
-  <h3>コミューン投稿テンプレート</h3>
-
-  <pre><code>今日学んだこと：
-〇〇を学びました。
-
-つまずいたこと：
-最初は〇〇の操作で止まりました。
-
-試したこと：
-解説を見直して、〇〇を確認しました。
-
-気づいたこと：
-つまずきの原因は、〇〇でした。
-
-自分への応用：
-この学びは、Canvaで研究カードを作り、
-CapCutで動画化し、Codexに保存する流れに使えそうです。
-
-次に試したいこと：
-〇〇をテンプレート化して、次回の投稿で使ってみます。</code></pre>
-
-  <p class="paw-note">
-    🐾 パウ所長の研究メモ：
-    コミューン投稿は、ただの「できました報告」ではないワン。
-    どこでつまずいたか。どう考えたか。どう解決したか。
-    自分の制作にどう応用したか。
-    その足あとが見える投稿ほど、運営側にも講師にも、他の受講生にも届きやすいワン。
-    コミューンは流れる実験室。Codexは残す研究所。
-    Rika研究員は、学びをコミューンに流し、気づきをCodexに保存することで、
-    AI学習を作品と研究ログに変えていけるワン。
-  </p>
-</section>
-
-        <h3>ツール選びで迷う理由</h3>
-<h4>スキル不足に見えていたものは、制作工程の設計不足だった</h4>
-
-<figure>
-  <img 
-    src="LearningLog_AI_Tool_Workflow_Forest_Before_Tools_PawLab_v1.png" 
-    alt="ツール選びで迷う理由 制作フローが見えると木ではなく森で選べる図解"
-    style="width:100%; max-width:900px; border-radius:16px;"
-
-    <h3>制作OSメモ｜ツール問題ではなく、設計図問題だった</h3>
-
-<figure>
-  <img 
-    src="LearningLog_AI_Tool_Workflow_Forest_Before_Tools_PawLab_v1.png" 
-    alt="ツール選びで迷う理由 制作フローが見えると木ではなく森で選べる図解"
-    style="width:100%; max-width:900px; border-radius:16px;"
-  >
-  <figcaption>
-    ツール選びで迷う理由は、ツール不足ではなく、制作フロー全体が見えていないことにある。
-  </figcaption>
-</figure>
-
-<details class="codex-details">
-  <summary>ツール選びで迷う理由を読む</summary>
-
-  <h4>制作フローが見えていないと、枝葉に迷う</h4>
-
-  <p>
-    画像生成や動画生成で「どのツールを使えばいいのか」と迷う理由は、
-    ツールの数が多すぎるからではありません。
-  </p>
-
-  <p>
-    本当の理由は、制作フローを体系的にイメージできていないからです。
-    完成までの手順が見えていない状態で、画像生成AI、動画生成AI、
-    デザインツール、動画編集ツールを見てしまうと、
-    枝葉のツールばかりに気を取られてしまいます。
-  </p>
-
-  <pre><code>1. 何を作りたいか決める
-2. 必要な素材を用意する
-3. 素材をデザイン・編集する
-4. 必要なら画像を動画化する
-5. 動画編集ツールで整える
-6. SNSやCodexに出す</code></pre>
-
-  <p>
-    大事なのは、最初から「どのAIツールが一番すごいか」で考えないことです。
-    ツールは主役ではなく、制作フローの中にある部品です。
-  </p>
-
-  <pre><code>素材を作る
-↓
-素材を整える
-↓
-素材を動かす
-↓
-動画として編集する
-↓
-作品として出す</code></pre>
-
-  <p>
-    普段は慣れているツールを中心に使い、
-    特定の機能が必要なときだけ専門ツールを使う。
-    これが、AI時代の制作迷子から抜け出すための地図になります。
-  </p>
-</details>
-
-<figure>
-  <img 
-    src="LearningLog_AI_Production_Blueprint_Gaudi_Insight_PawLab_v1.png" 
-    alt="今日の気づき ツール選びで迷う理由 設計図問題として整理した図解"
-    style="width:100%; max-width:900px; border-radius:16px;"
-  >
-  <figcaption>
-    ツール問題ではなく、設計図問題だった。AIは作るのが得意で、人間は設計と調整が得意。
-  </figcaption>
-</figure>
-
-<details class="codex-details">
-  <summary>設計図があるから制作が続く</summary>
-
-  <p>
-    今日の気づきの核心は、
-    「ツール選びで迷う理由は、ツール問題ではなく、設計図問題だった」
-    ということです。
-  </p>
-
-  <p>
-    画像生成も、動画生成も、SNS運用も、文章作成も、
-    全部バラバラのスキルに見えます。
-    けれど本当は、同じ構造の上に成り立っています。
-  </p>
-
-  <pre><code>アイデア
-↓
-設計図
-↓
-素材づくり
-↓
-編集
-↓
-調整
-↓
-完成
-↓
-発信・保存</code></pre>
-
-  <p>
-    設計図があると、
-    「ここは画像が必要」「ここは構成が必要」「ここは動きが必要」
-    「ここは編集が必要」「ここは保存先が必要」と分かるようになります。
-  </p>
-
-  <p>
-    サグラダ・ファミリアが今なお建設されているのは、
-    ガウディ本人がいなくても設計思想が残っているからです。
-    AI制作も同じで、AIは手を動かすのが得意。
-    でも、人間は何を作るか、どう設計するか、何を価値にするかを決めるのが得意です。
-  </p>
-
-  <pre><code>AI生成 = 作るのが得意
-人間 = 設計するのが得意
-人間の調整 = 仕上げるのが得意
-Codex = 設計思想を残す場所</code></pre>
-</details>
-
-<details class="codex-details">
-  <summary>パウ所長の研究メモを読む</summary>
-
-  <p class="paw-note">
-    🐾 今回の研究結果：
-    Rika研究員がツール選びで迷っていた理由は、
-    ツールの問題ではなく、制作フローの全体像がまだ地図になっていなかったからだワン。
-  </p>
-
-  <p class="paw-note">
-    画像生成AI、動画生成AI、Canva、CapCut、Premiere Proは、
-    それぞれ別々の島ではなく、ひとつの制作航路の中にある港だワン。
-  </p>
-
-  <p class="paw-note">
-    まず見るべきは「どのツールがすごいか」ではなく、
-    何を作るか、どんな素材が必要か、どこで整えるか、
-    どこで動かすか、どこで仕上げるか、どこに保存するかという流れだワン。
-  </p>
-</details>
-  >
-  <figcaption>
-     画像生成や動画生成で「どのツールを使えばいいのかわからない」と迷う理由は、ツール不足でもスキル不足でもありません。
-  </figcaption>
-</figure>
-
-<p>
-  本当の理由は、制作工程を体系的にイメージできていないことにあります。
-  完成までの手順が見えていない状態で、画像生成AI、動画生成AI、デザインツール、
-  動画編集ツールを見てしまうと、枝葉のツールばかりに気を取られてしまいます。
-</p>
-
-<p>
-  木を見て、森を見ず。
-  けれど、本来見るべきなのは、まず制作工程全体の流れと、その見取り図です。
-</p>
-
-<pre><code>1. 何を作りたいか決める
-2. 必要な素材を用意する
-3. 素材をデザイン・編集する
-4. 必要なら画像を動画化する
-5. 動画編集ツールで整える
-6. SNSやCodexに出す</code></pre>
-
-<p>
-  画像はAI画像生成ツールで作ってもいいし、自分で撮った写真や手持ちの素材を使ってもよい。
-  その素材をCanvaなどでデザインし、必要に応じて画像編集を加え、
-  さらに動画化したい場合は動画生成ツールを使う。
-  最後にCapCutやPremiere Proなどの動画編集ツールで、テロップ、音声、BGM、尺、構成を整えて作品にする。
-</p>
-
-<p>
-  大事なのは、最初から「どのAIツールが一番すごいか」で考えないことです。
-  ツールは主役ではなく、制作フローの中にある部品です。
-</p>
-
-<pre><code>素材を作る
-↓
-素材を整える
-↓
-素材を動かす
-↓
-動画として編集する
-↓
-作品として出す</code></pre>
-
-<p>
-  この流れが見えていれば、ツール選びで迷いにくくなります。
-  普段は、慣れているツールを中心に使う。
-  そして、特定の機能が必要なときだけ、画像生成AI、動画生成AI、音声生成AI、
-  背景除去、アップスケールなどの専門ツールを使う。
-</p>
-
-<p>
-  クレジット課金が必要なツールも、毎回使う必要はありません。
-  必要な場面だけ、必要な分だけ使えばよいのです。
-</p>
-
-<p>
-  Rika研究員にとって大切なのは、最新ツールを全部追いかけることではなく、
-  自分の制作OSの中で、どの工程にどのツールを置くかを決めることです。
-</p>
-
-<p>
-  ツールに振り回されるのではなく、制作フローの中にツールを配置する。
-  これが、AI時代の制作迷子から抜け出すための地図になります。
-</p>
-
-<h3>設計図があるから制作が続く</h3>
-
-<figure>
-  <img 
-    src="LearningLog_AI_Production_Blueprint_Gaudi_Insight_PawLab_v1.png" 
-    alt="今日の気づき ツール選びで迷う理由 設計図問題として整理した図解"
-    style="width:100%; max-width:900px; border-radius:16px;"
-  >
-  <figcaption>
-    ツール問題ではなく、見取り図問題だった。AIは作るのが得意で、人間は設計と調整が得意。
-  </figcaption>
-</figure>
-
-<p>
-  今日の気づきの核心は、
-  「ツール選びで迷う理由は、ツール問題ではなく、設計図問題だった」
-  ということです。
-</p>
-
-<p>
-  画像生成も、動画生成も、SNS運用も、文章作成も、全部バラバラのスキルに見えます。
-  けれど本当は、同じ構造の上に成り立っています。
-</p>
-
-<pre><code>アイデア
-↓
-設計図
-↓
-素材づくり
-↓
-編集
-↓
-調整
-↓
-完成
-↓
-発信・保存</code></pre>
-
-<p>
-  この設計図がないままツールを選ぼうとすると、
-  「Klingがいい？」「Runwayがいい？」「Magnificがいい？」「Canvaでできる？」「CapCut？」「Premiere？」
-  というように、枝葉の森に迷い込みます。
-</p>
-
-<p>
-  でも、設計図があると、
-  「ここは画像が必要」「ここは構成が必要」「ここは動きが必要」
-  「ここは編集が必要」「ここは保存先が必要」と分かるようになり、
-  ツールは“必要な工程に置く道具”になります。
-</p>
-
-<p>
-  サグラダ・ファミリアが今なお建設されているのは、
-  ガウディ本人がいなくても設計思想が残っているからです。
-  AI制作も同じで、AIは手を動かすのが得意。
-  でも、何を作るか、どう設計するか、何を価値にするかを決めるは人間です。
-</p>
-
-<pre><code>AI生成 = 作るのが得意
-人間 = 設計するのが得意
-人間の調整 = 仕上げるのが得意
-Codex = 設計思想を残す場所</code></pre>
-
-<p>
-  その調整の中に、クリエイティブ、オリジナリティ、職人性、生きがい、人生哲学が表れます。
-  AIが作ったものを、どの方向へ整え、何を価値ととして残すか。
-  そこに人間の編集権があります。
-  だから、AI時代の制作で大切なのは、
-  どのツールを使うかではなく、先に設計図を持つことです。
-</p>
-
-<p>
-  設計図があるから、AIに的確に指示できる。
-  設計図があるから、画像生成AI、動画生成AI、Canva、CapCut、Codexの役割が整理できる。
-  設計図があるから、制作は枝葉ではなく、一本の森として見えてきます。
-</p>
-
-<p class="paw-note">
-  🐾 パウ所長の研究メモ：
-  ツール選びで迷う理由は、制作フロー全体がまだ地図になっていなかったからだワン。
-  画像生成AI、動画生成AIは、それぞれ別々の島ではなく、
-  ひとつの制作航路の中にある港だワン。
-  AIは手を動かすのが得意だワン。
-  でも、何を作るか、どんな意味を持たせるか、どこに価値を置くかを決めるのは人間だワン。
-  AIに任せる部分と、人間が握る部分を分けることで、制作はただの自動生成ではなく、コンテンツ作品になっていくワン。
-  まず見るべきは「どのツールがすごいか」ではなく、
-  「何を作るか」「どんな素材が必要か」「どこで整えるか」「どこで動かすか」
-  「どこで仕上げるか」「どこに保存するか」という流れだワン。
-  
-</p>
-
-  <h3>おすすめの学習順</h3>
-
-  <pre><code>1. Canva
-2. NotebookLM
-3. CapCut
-4. Codex整理
-5. Premiere ProやKlingなどの応用ツール</code></pre>
-
-  <p>
-    いきなり動画生成AIやPremiere Proに飛ぶよりも、
-    まずはCanvaで「見せる型」を作るほうが効率的です。
-    その後、NotebookLMで整理し、CapCutで動画化し、Codexに保存していく流れが自然です。
-  </p>
-
-  <p class="paw-note">
-    🐾 パウ所長の研究メモ：Rika研究員は、まずCanvaで「見える研究ノート」を作るとよいワン。
-    そこからNotebookLMやNotionで情報を整理し、CapCutで動画化し、Codexにアーカイブしていくことで、
-    日々の学びが作品の森になっていくワン。
-  </p>
-</section>
-
-      <article class="update-item">
-  <h3>2026.07.03｜AI Tool Workflowを追加</h3>
-  <p>
-    Rika研究員のAIツール活用導線を、Operating Designとして追加。
-    Canva、NotebookLM、CapCut、Codex、ChatGPTの役割を整理し、
-    観察から作品アーカイブまでの制作OSを可視化した。
-  </p>
-</article>
-
-  <figure>
-    <img 
-      src="codex-canva.twoships-flowplan.png" 
-      alt="CodexとCanva Websiteの二本立て運営構想図"
-      style="width:100%; max-width:900px; border-radius:16px;"
-    >
-    <figcaption>
-      Codexは制作と学習のアーカイブ、Canva Websiteは研究所としての外向きの展示場。
-    </figcaption>
-  </figure>
-
-  <p>
-    二つを分けることで、Rika研究員個人の成長記録と、
-    パウ研究所の世界観をそれぞれ育てていく。
-  </p>
-
-  <p class="paw-note">
-    🐾 パウ所長の見立て：母艦と展示場を分けることで、作品の蓄積と世界観の発信が整理される。
-  </p>
-</section>
-
-    <section class="operation-strategy">
-  <h2>補足｜日本語 / Italiano 対応とCodexコンセプト更新</h2>
-
-  <p
-    data-ja="Codexに日本語 / Italiano の言語切り替え機能を追加し、サイト全体の説明文とコンセプトを見直しました。これにより、Codexは単なるAI動画制作の学習ログではなく、Rika研究員の観察・構造化・制作ログを蓄積する母艦として再定義されました。"
-    data-it="Ho aggiunto al Codex la funzione di cambio lingua tra giapponese e italiano, rivedendo anche il testo introduttivo e il concetto generale del sito. In questo modo, il Codex non è più solo un diario di apprendimento sulla produzione di video AI, ma viene ridefinito come una nave madre che raccoglie osservazioni, strutture e log di produzione di Rika.">
-    Codexに日本語 / Italiano の言語切り替え機能を追加し、サイト全体の説明文とコンセプトを見直しました。これにより、Codexは単なるAI動画制作の学習ログではなく、Rika研究員の観察・構造化・制作ログを蓄積する母艦として再定義されました。
-  </p>
-
-  <figure>
-    <img 
-      src="LearningLog_Codex_Bilingual_Concept_Update_PawLab_v2.png" 
-      alt="Codexの日本語・イタリア語対応とコンセプト更新の流れ図"
-      style="width:100%; max-width:900px; border-radius:16px;"
-    >
-    <figcaption
-      data-ja="日本語Codexに data-ja / data-it を追加し、日本語 / Italiano ボタンで切り替えられるようにした更新ログ。"
-      data-it="Un registro dell’aggiornamento in cui il Codex giapponese è stato ampliato con data-ja / data-it e reso selezionabile tramite i pulsanti Giapponese / Italiano.">
-      日本語Codexに data-ja / data-it を追加し、日本語 / Italiano ボタンで切り替えられるようにした更新ログ。
-    </figcaption>
-  </figure>
-
-  <p
-    data-ja="この更新は、Codexを日本語圏だけでなくイタリア語圏にも開いていくための第一歩です。今後は、トップ説明文、運営設計、代表的な学習ログから順番にイタリア語対応を進めていきます。"
-    data-it="Questo aggiornamento è il primo passo per aprire il Codex non solo al pubblico giapponese, ma anche a quello italofono. In seguito, la traduzione italiana verrà ampliata gradualmente a partire dal testo introduttivo, dal design operativo e dai principali diari di apprendimento.">
-    この更新は、Codexを日本語圏だけでなくイタリア語圏にも開いていくための第一歩です。今後は、トップ説明文、運営設計、代表的な学習ログから順番にイタリア語対応を進めていきます。
-  </p>
-
-  <p 
-    class="paw-note"
-    data-ja="🐾 パウ所長の見立て：言語切り替えは単なる翻訳ではなく、Codex母艦に外向きの窓を増設する作業である。"
-    data-it="🐾 Osservazione del direttore Paw: il cambio lingua non è una semplice traduzione, ma l’aggiunta di una nuova finestra verso l’esterno alla nave madre Codex.">
-    🐾 パウ所長の見立て：言語切り替えは単なる翻訳ではなく、Codex母艦に外向きの窓を増設する作業である。
-  </p>
-</section>
-
-  <div class="work-index">
-    <p><strong>目次</strong></p>
-    <ol>
-      <li>AIクリエイティブ思想設計</li>
-      <li>研究カードの制作フロー</li>
-      <li>パウ研究所 研究チームメンバー紹介</li>
-      <li>Canva AI活用ログ</li>
-    </ol>
-  </div>
-
-  <div class="work-links">
-    <a href="Creative_Philosophy_Map_Codex_01.png" target="_blank" rel="noopener">
-      思想設計図を見る ↗
-    </a>
-
-    <a href="paw-lab_research-card-production-flow.png" target="_blank" rel="noopener">
-      研究カード制作フローを見る ↗
-    </a>
-
-    <a href="paw-lab_team-members.png" target="_blank" rel="noopener">
-      研究チーム紹介を見る ↗
-    </a>
-
-    <a href="canva-learningn-corse.png" target="_blank" rel="noopener">
-      Canva AI活用ログを見る ↗
-    </a>
-
-    <section class="learning-log-card">
-  <h2>EP09｜Canva AI 学習ログ：パウ研究所版</h2>
-
-  <figure>
-    <img 
-      src="LearningLog_Canva_EP09.3.png" 
-      alt="Canva AI 学習ログ EP09 パウ研究所版"
-      style="width:100%; max-width:900px; border-radius:16px;"
-    >
-    <figcaption>
-      Canva AI講座で試した実践を、パウ人間OS・社会人類学研究所の視点で再構成した学習ログ。
-    </figcaption>
-  </figure>
-
-  <p>
-    教材の内容をそのまま写すのではなく、Rika研究員の観察・理解・制作プロセスとして再編集した記録。
-    Canvaを使って、学びを「研究カード」として視覚化する練習ログ。
-  </p>
-
-<figure>
-  <img 
-    src="LearningLog_Canva_EP09.4.png" 
-    alt="Canva AI 学習ログ EP09② パウ研究所版"
-    style="width:100%; max-width:900px; border-radius:16px;"
-  >
-  <figcaption>
-    Canvaでの学びを、研究カード形式で整理したEP09の追加ログ。
-  </figcaption>
-</figure>
-
-<p>
-  Canvaを制作の工房として活用しながら、学びを研究カードとして再構成した記録。
-  研究所メンバーの世界観を交えつつ、テンプレート活用、研究テーマ整理、気づきの言語化、
-  そして学びを作品化する流れまでを1枚にまとめた実践ログ。
-</p>
-      
-      <figure>
-  <img 
-    src="Canva_EP08_Sidebar_Overview_01.png" 
-    alt="パウ所長のCanvaサイドバー機能ガイド"
-    style="width:100%; max-width:900px; border-radius:16px;"
-  >
-  <figcaption>
-    Canvaのサイドバー機能を、制作時に参照できるパウ研究所版ガイドとして整理。
-  </figcaption>
-</figure>
-
-<p>
-  Canvaで制作するときに迷いやすいサイドバー機能を、テンプレート・素材・テキスト・ブランド・アップロード・ツール・プロジェクト・アプリ・マジック生成・グラフごとに整理した補助資料。
-</p>
-
-  <p class="paw-note">
-    🐾 Reviewed by パウ所長
-  </p>
-
-<section class="update-log">
-  <h2>更新履歴</h2>
-
-  <article class="update-item">
-    <h3>2026.07.02｜Canva AI 学習ログ EP09と運営設計図を更新</h3>
-    <p>
-      Canva AI講座の学びを、パウ研究所版の観察ログとして再構成。
-      あわせて、CodexとCanva Websiteの二本立て運営構想を整理した。
-    </p>
-    <p>
-      学習・制作・運営設計がつながり、Codex母艦の方向性がより明確になった更新日。
-    </p>
-
-    <article class="update-item">
-  <h3>2026.07.03｜Rika研究員を加えた研究チーム紹介を追加</h3>
-  <p>
-    パウ人間OS・社会人類学研究所の研究チーム紹介を更新。
-    Rika研究員を中心に、パウ所長・モグ研究員・ミミ研究員・コタ研究員・パウBotの役割を整理した。
-  </p>
-  <p>
-    研究所の世界観と制作OSがつながり、観察・分析・可視化・発信・アーカイブまでの体制がより明確になった。
-  </p>
-
-     <article class="update-item">
-  <h3>2026.07.03｜ツール選びで迷う理由を制作OSの視点で追加</h3>
-  <p>
-    AI Tool Workflow に新しい節を追加し、
-    「ツール選びで迷う理由は、ツール不足ではなく制作フロー全体が見えていないから」
-    という気づきを整理した。
-  </p>
-  <p>
-    あわせて、設計図の重要性、AIと人間の役割分担、
-    そしてCodexを設計思想の保存場所として位置づける考え方を追記した。
-  </p>
-</article> 
-</article>
-  </article>
-</section>
-      
-</section>
-  </div>
-</article>
-    
-  </div>
-</section>
-
-      <section class="section notes" id="notes">
-        <p class="section-label">Study Notes</p>
-        <h2>学習記録</h2>
+        <div class="work-grid">
+          <article class="work-card has-image">
+            <img src="coffee-trivia-thumb.png" alt="コーヒー雑学ショート動画のサムネイル" class="work-thumb" />
+            <div class="work-content">
+              <span class="card-kicker">Portfolio Card</span>
+              <h3>コーヒー雑学ショート動画</h3>
+              <p>ChatGPTで構成を作り、フリー素材を使ってCapCutで編集した初めての学習ログ動画。</p>
+              <a href="https://www.instagram.com/italyaiwatch/reel/DaI36t9s_Kb/" target="_blank" rel="noopener noreferrer">Instagramで見る</a>
+            </div>
+          </article>
+          <article class="work-card has-image">
+            <img src="Notebook-thumb.png" alt="NotebookLM音声素材ショートのサムネイル" class="work-thumb" />
+            <div class="work-content">
+              <span class="card-kicker">Portfolio Card</span>
+              <h3>NotebookLM音声素材ショート</h3>
+              <p>NotebookLMで生成した音声を素材にして、CapCutで背景映像とテロップを組み合わせた実験動画。</p>
+              <a href="https://www.instagram.com/italyaiwatch/reel/DaI3nEas8HR/" target="_blank" rel="noopener noreferrer">Instagramで見る</a>
+            </div>
+          </article>
+          <article class="work-card has-image">
+            <img src="creative-system-thumb.png" alt="AIクリエイティブ運営設計図" class="work-thumb" />
+            <div class="work-content">
+              <span class="card-kicker">Operating Design</span>
+              <h3>AIクリエイティブ運営設計図</h3>
+              <p>Codexを母艦に、Canva・Premiere・Instagram・YouTubeをつなぐ運営設計ページ。</p>
+              <a href="creative-system-map.png" target="_blank" rel="noopener">構成図を見る</a>
+            </div>
+          </article>
+          <article class="work-card has-image">
+            <img src="capcut-ai-flow-thumb.png" alt="CapCut AIツール制作フロー" class="work-thumb" />
+            <div class="work-content">
+              <span class="card-kicker">Tool Workflow</span>
+              <h3>CapCut AIツール制作フロー</h3>
+              <p>解説ショート動画制作の5ステップを図解し、企画から編集までの流れを整理。</p>
+              <a href="capcut-ai-flow1.png" target="_blank" rel="noopener">制作フローを見る</a>
+            </div>
+          </article>
+          <article class="work-card has-image">
+            <img src="ai-cognitive-design-thumb.png" alt="AI時代の認知設計" class="work-thumb" />
+            <div class="work-content">
+              <span class="card-kicker">Research Card</span>
+              <h3>AI時代の認知設計</h3>
+              <p>ショート動画が認知や感情に働きかけ、保存・シェアへつながる仕組みを整理。</p>
+              <a href="ai-cognitive-design.png" target="_blank" rel="noopener">構成図を見る</a>
+            </div>
+          </article>
+          <article class="work-card has-image">
+            <img src="learninglog.thum.png" alt="AI動画制作ゼミ学習ログ" class="work-thumb" />
+            <div class="work-content">
+              <span class="card-kicker">Learning Log</span>
+              <h3>AI動画制作の学習ログ</h3>
+              <p>講座で学んだこと、つまずき、制作の改善点をカード型で保存するログ。</p>
+              <a href="#learning-log">学習ログへ</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section learning-log" id="learning-log">
+        <p class="section-label">Learning Log</p>
+        <h2>学習ログ</h2>
         <div class="note-list">
+          <article class="highlight-note">
+            <time datetime="2026-07-04">2026.07.04</time>
+            <h3>AI動画ゼミ課題｜Canvaで「AI時代の学び方」制作設計書を作成</h3>
+            <p>
+              今日のゼミ課題では、カリキュラム資料をそのまま編集するのではなく、参考地図として読み取り、Canvaで提出用の独立した制作設計書を作成した。
+              タイトルは「AI時代の学び方」。生成AIと動画編集を融合させる新しい制作思考として、学ぶ・作る・つなげる流れを6ページのPDFに整理した。
+            </p>
+            <p>
+              Canvaを使ったことで、講座の理解を文章だけでなく、表紙、概要、メッセージ、動画構成、シーン別テロップ、使用素材の計画として可視化できた。
+              これは「学習ログを作品化する」Rika研究員らしい実践になった。
+            </p>
+            <p class="paw-note">🐾 パウ所長の研究メモ：教材を写すのではなく、自分の制作フローに変換できたのが今回のポイントだワン。Canvaは、学びを見える設計図に変える研究ノートだワン。</p>
+          </article>
+
           <article>
-            <time datetime="2026-06-20">2026.06.20</time>
-            <h3>プロンプトは「画角・動き・質感」を分けて書く</h3>
-            <p>一文に詰め込むより、カメラ、被写体、雰囲気を整理すると再現性が上がりました。</p>
+            <time datetime="2026-07-03">2026.07.03</time>
+            <h3>Codex Cards｜1カード1コンセプト設計を追加</h3>
+            <p>Codexを長文の倉庫ではなく、研究カードが並ぶ知の標本棚として整理する方針を追加した。</p>
           </article>
           <article>
-            <time datetime="2026-06-13">2026.06.13</time>
-            <h3>短尺動画は最初の2秒で意図を伝える</h3>
-            <p>タイトル、明るい画、動きのある要素を冒頭に置くと、見始めの印象が強くなります。</p>
+            <time datetime="2026-07-03">2026.07.03</time>
+            <h3>AI Tool Workflowを追加</h3>
+            <p>Canva、NotebookLM、CapCut、Codex、ChatGPTの役割を整理し、観察から作品アーカイブまでの制作OSを可視化した。</p>
           </article>
           <article>
-            <time datetime="2026-06-06">2026.06.06</time>
-            <h3>生成素材は編集前提で余白を作る</h3>
-            <p>テロップやロゴの配置場所を考えて生成すると、後工程の調整がスムーズでした。</p>
+            <time datetime="2026-07-02">2026.07.02</time>
+            <h3>Canva AI 学習ログ EP09と運営設計図を更新</h3>
+            <p>Canva AI講座の学びを、パウ研究所版の観察ログとして再構成した。</p>
           </article>
         </div>
       </section>
@@ -1251,6 +263,7 @@ Codex = 設計思想を残す場所</code></pre>
         <h2>使用ツール一覧</h2>
         <ul class="tool-list" aria-label="使用ツール一覧">
           <li>ChatGPT</li>
+          <li>Canva</li>
           <li>NotebookLM</li>
           <li>CapCut</li>
           <li>Premiere Pro</li>
@@ -1262,26 +275,24 @@ Codex = 設計思想を残す場所</code></pre>
       <section class="section contact" id="contact">
         <p class="section-label">Contact</p>
         <h2>Instagramで制作ログを見る</h2>
-        <p>日々の作品だけでなく、AIニュース、社会の変化。気になったテーマを観察しながら、点と点をつなぐシンセサイザー実験ログをInstagramで更新しています。</p>
-        <a href="https://www.instagram.com/italyaiwatch?igsh=MW5lMWd5N3JwdWFmdA==" target="_blank" rel="noopener noreferrer">Instagramで見る</a>
+        <p>日々の作品だけでなく、AIニュース、社会の変化、気になったテーマを観察しながら、点と点をつなぐシンセサイザー実験ログをInstagramで更新しています。</p>
+        <a class="primary-button instagram-button" href="https://www.instagram.com/italyaiwatch?igsh=MW5lMWd5N3JwdWFmdA==" target="_blank" rel="noopener noreferrer">Instagramで見る</a>
       </section>
     </main>
 
-  <script>
-  function setLanguage(lang) {
-    document.querySelectorAll('[data-ja][data-it]').forEach(function(element) {
-      element.textContent = element.getAttribute('data-' + lang);
-    });
+    <script>
+      function setLanguage(lang) {
+        document.querySelectorAll('[data-ja][data-it]').forEach(function(element) {
+          element.textContent = element.getAttribute('data-' + lang);
+        });
+        document.documentElement.lang = lang;
+        localStorage.setItem('siteLanguage', lang);
+      }
 
-    document.documentElement.lang = lang;
-    localStorage.setItem('siteLanguage', lang);
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const savedLanguage = localStorage.getItem('siteLanguage') || 'ja';
-    setLanguage(savedLanguage);
-  });
-</script>
-    
+      document.addEventListener('DOMContentLoaded', function() {
+        const savedLanguage = localStorage.getItem('siteLanguage') || 'ja';
+        setLanguage(savedLanguage);
+      });
+    </script>
   </body>
 </html>

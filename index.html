@@ -13,6 +13,7 @@
         <div class="nav-links">
           <a href="#profile" data-ja="プロフィール" data-it="Profilo">プロフィール</a>
           <a href="#codex-cards" data-ja="Codex Cards" data-it="Codex Cards">Codex Cards</a>
+          <a href="#update-log" data-ja="更新履歴" data-it="Registro">更新履歴</a>
           <a href="#works" data-ja="作品一覧" data-it="Lavori">作品一覧</a>
           <a href="#learning-log" data-ja="学習ログ" data-it="Diario">学習ログ</a>
           <a href="#tools" data-ja="使用ツール" data-it="Strumenti">使用ツール</a>
@@ -125,6 +126,56 @@
             Codex Cardsの基本デザイン方針。カテゴリ・タイトル・一言説明・画像・タグ・詳しく見るボタンをそろえ、研究カードが並ぶ知の標本棚として整理していく。
           </figcaption>
         </figure>
+      </section>
+
+      <section class="section update-log-section" id="update-log">
+        <p class="section-label">Update Log</p>
+        <h2>Codex更新履歴</h2>
+        <p class="section-intro">
+          Codex関連の変更・考察・画像は、完成品だけでなく「なぜ変えたのか」「何を学んだのか」「どの画像を作ったのか」「どう反映したのか」「次に何へ展開できるのか」まで、日付付きカードで保存します。
+        </p>
+
+        <div class="update-log-grid">
+          <article class="update-card">
+            <time datetime="2026-07-04">2026.07.04</time>
+            <span class="codex-card-category">Codex Update</span>
+            <h3>更新履歴セクションを独立化</h3>
+            <p>Codexの変更内容を、学習ログや作品一覧とは分けて残すために、独立したUpdate Logセクションを作成。</p>
+            <details class="codex-details">
+              <summary>変更理由と次の展開</summary>
+              <p>変更・考察・画像を制作ログ資産として扱うため、完成品だけでなく制作の年輪を残す棚が必要になった。今後は日付付きカードで、変更内容・気づき・転用先を整理する。</p>
+            </details>
+          </article>
+
+          <article class="update-card">
+            <time datetime="2026-07-04">2026.07.04</time>
+            <span class="codex-card-category">Card UI</span>
+            <h3>Codexをカード型UIに整理</h3>
+            <p>「1カード = 1コンセプト」を基本に、Codexを長文の倉庫から研究カードが並ぶ知の標本棚へ整理。</p>
+            <details class="codex-details">
+              <summary>反映内容を見る</summary>
+              <p>Codex Cardsセクション、デザインガイド、カードカテゴリ、作品一覧、学習ログの流れを再編成。カードの世界観を維持するため、色・余白・タグ・画像配置もそろえた。</p>
+            </details>
+          </article>
+
+          <article class="update-card">
+            <time datetime="2026-07-04">2026.07.04</time>
+            <span class="codex-card-category">Learning Log</span>
+            <h3>AI動画ゼミ課題のCanva制作ログを追加</h3>
+            <p>今日のゼミ課題で、Canvaを使って「AI時代の学び方」制作設計書を作成したことを学習ログに追加。</p>
+            <details class="codex-details">
+              <summary>学びの要点を見る</summary>
+              <p>カリキュラム資料をそのまま編集せず、参考地図として読み取り、自分の理解として6ページの提出用PDFに再構成した。Canvaは学びを見える設計図に変える研究ノートとして活用した。</p>
+            </details>
+          </article>
+
+          <article class="update-card">
+            <time datetime="2026-07-03">2026.07.03</time>
+            <span class="codex-card-category">Paw Lab</span>
+            <h3>研究チーム紹介と制作フローをCodex基準に整理</h3>
+            <p>Rika研究員、パウ所長、研究員チームの役割を整理し、観察からCodexアーカイブまでの研究フローを明確化。</p>
+          </article>
+        </div>
       </section>
 
       <section class="section operation-section" id="operating-design">

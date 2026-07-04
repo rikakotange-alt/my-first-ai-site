@@ -704,3 +704,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+.codex-design-guide-section {
+  margin: 56px auto 72px;
+  padding: 28px 20px;
+}

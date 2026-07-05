@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Library OS｜Rika Creative Codex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .library-hero {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 48px clamp(20px, 5vw, 40px) 24px;
+      }
+
+      .library-panel,
+      .terminal-card,
+      .secretary-card,
+      .library-card,
+      .concept-box {
+        border: 2px solid var(--ink);
+        background: rgba(255, 248, 232, 0.92);
+        box-shadow: var(--shadow);
+      }
+
+      .library-panel {
+        padding: clamp(28px, 5vw, 54px);
+        text-align: center;
+      }
+
+      .library-panel h1 {
+        margin-bottom: 18px;
+      }
+
+      .library-panel p {
+        max-width: 820px;
+        margin-inline: auto;
+        color: var(--muted);
+      }
+
+      .library-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 34px;
+        text-align: left;
+      }
+
+      .terminal-card,
+      .secretary-card {
+        padding: 26px;
+      }
+
+      .terminal-card h3,
+      .secretary-card h3 {
+        margin-bottom: 12px;
+      }
+
+      .flow-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 28px auto;
+        color: var(--accent);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 900;
+      }
+
+      .terminal-controls {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin: 28px 0 24px;
+      }
+
+      .terminal-search {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 18px;
+        border: 2px solid var(--ink);
+        background: var(--paper);
+        color: var(--ink);
+        font: 700 1rem/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+      }
+
+      .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .filter-buttons button {
+        padding: 9px 14px;
+        border: 1px solid var(--accent);
+        border-radius: 999px;
+        background: rgba(213, 154, 85, 0.14);
+        color: var(--accent);
+        cursor: pointer;
+        font-weight: 900;
+      }
+
+      .filter-buttons button.active {
+        background: var(--accent);
+        color: var(--paper);
+      }
+
+      .library-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .library-card {
+        padding: 24px;
+      }
+
+      .library-card[data-hidden="true"] {
+        display: none;
+      }
+
+      .library-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 18px 0 0;
+      }
+
+      .library-meta span {
+        padding: 5px 9px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+
+      .concept-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .concept-box {
+        padding: 22px;
+      }
+
+      .concept-box strong {
+        color: var(--accent);
+      }
+
+      .empty-message {
+        display: none;
+        margin-top: 16px;
+        padding: 18px;
+        border-left: 5px solid var(--accent);
+        background: rgba(213, 154, 85, 0.16);
+        font-weight: 800;
+      }
+
+      @media (max-width: 900px) {
+        .library-map,
+        .library-grid,
+        .concept-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a class="logo" href="index.html#top">Rika Creative Codex</a>
+        <div class="nav-links">
+          <a href="index.html#codex-cards">Codex Cards</a>
+          <a href="index.html#visual-archive">可視化アーカイブ</a>
+          <a href="index.html#learning-log">学習ログ</a>
+          <a href="codex-library-os.html">知の図書館</a>
+          <a href="index.html#contact">Instagram</a>
+        </div>
+      </nav>
+
+      <section class="library-hero">
+        <div class="library-panel">
+          <p class="eyebrow">Paw Lab Library OS</p>
+          <h1>知の図書館｜検索端末と研究秘書アプリ</h1>
+          <p>
+            Rika Creative Codexは、長く伸びる学習ログではなく、探せる・開ける・分類できる自分専用アカデミアへ育てていく。
+            表側は検索端末つきの知の図書館、裏側は日々のメモや未整理カードを受け止める研究秘書アプリとして整理する。
+          </p>
+
+          <div class="library-map">
+            <article class="terminal-card">
+              <span class="codex-card-category">Search Terminal</span>
+              <h3>検索端末図書館</h3>
+              <p>完成・整理済みのカードを、棚、タグ、日付、ツール、テーマで探す場所。過去の学びを再発見し、制作や投稿に再利用する。</p>
+            </article>
+            <article class="secretary-card">
+              <span class="codex-card-category">Paw Lab Assistant</span>
+              <h3>研究秘書アプリ</h3>
+              <p>今日の気づき、スクショ、未整理メモ、あとでCodexに入れたい候補を一時保存する場所。観察ノートから研究カードへ移す前の秘書机。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="library-terminal">
+        <p class="section-label">Codex Search Terminal</p>
+        <h2>図書館の検索マシン型Codex</h2>
+        <p class="section-intro">
+          学習ログ、研究カード、Structure Diagram、Tool Workflow、Paw Lab Notesを、キーワードやカテゴリで探せるようにするための試作端末。
+          まずは小さく、カードを探せる研究棚として育てる。
+        </p>
+
+        <div class="terminal-controls" aria-label="カード検索とカテゴリフィルター">
+          <input id="librarySearch" class="terminal-search" type="search" placeholder="キーワードで検索：Cloudflare / Claude Code / Canva / バイブコーディング" />
+          <div class="filter-buttons" aria-label="カテゴリフィルター">
+            <button type="button" class="active" data-filter="all">すべて</button>
+            <button type="button" data-filter="Learning Log">Learning Log</button>
+            <button type="button" data-filter="Research Card">Research Card</button>
+            <button type="button" data-filter="Structure Diagram">Structure Diagram</button>
+            <button type="button" data-filter="Tool Workflow">Tool Workflow</button>
+            <button type="button" data-filter="Paw Lab Notes">Paw Lab Notes</button>
+          </div>
+        </div>
+
+        <div class="library-grid" id="libraryCards">
+          <article class="library-card" data-category="Structure Diagram" data-keywords="claude code codex chatgpt 開発机 相談机 ai制作os">
+            <span class="codex-card-category">Structure Diagram</span>
+            <h3>AI Coding Tools｜相談机から開発机へ</h3>
+            <p>Claude Chat / CoWork / Claude Codeを、ChatGPT Plus / Codex目線に置き換えて整理するカード。</p>
+            <div class="library-meta"><span>Claude Code</span><span>Codex</span><span>AI制作OS</span></div>
+          </article>
+
+          <article class="library-card" data-category="Research Card" data-keywords="hyper vibe direction なんとなく 設計指示 バイブコーディング スクショ 参照画像">
+            <span class="codex-card-category">Research Card</span>
+            <h3>Hyper Vibe Direction</h3>
+            <p>なんとなくを設計指示に変える力。スクショ、参照画像、違和感、NG条件をセットでAIへ渡す制作OS。</p>
+            <div class="library-meta"><span>バイブコーディング</span><span>指示術</span><span>Rika研究員</span></div>
+          </article>
+
+          <article class="library-card" data-category="Learning Log" data-keywords="html css javascript 骨組み 見た目 動き web制作">
+            <span class="codex-card-category">Learning Log</span>
+            <h3>HTML / CSS / JavaScript｜骨組み・見た目・動き</h3>
+            <p>意味もわからず触っていたサイト編集を、HTMLは骨組み、CSSは見た目、JavaScriptは動きとして理解するログ。</p>
+            <div class="library-meta"><span>Web制作</span><span>HTML</span><span>CSS</span></div>
+          </article>
+
+          <article class="library-card" data-category="Structure Diagram" data-keywords="cloudflare pages サイト公開 作る 公開 料理 テーブル url ドメイン">
+            <span class="codex-card-category">Structure Diagram</span>
+            <h3>Web-02｜「作る」と「公開する」は別作業</h3>
+            <p>サイトを作ることは料理を作って皿に盛ること。Cloudflare Pagesはテーブルに出し、URLで誰でも見られる状態にする場所。</p>
+            <div class="library-meta"><span>Cloudflare</span><span>公開</span><span>飲食店のたとえ</span></div>
+          </article>
+
+          <article class="library-card" data-category="Tool Workflow" data-keywords="研究秘書アプリ 振り返り メモ タスク 未整理カード codex候補">
+            <span class="codex-card-category">Tool Workflow</span>
+            <h3>Paw Lab Assistant｜研究秘書アプリ</h3>
+            <p>今日の学び、気づき、未整理メモ、あとでCodexに入れる候補を受け止める秘書机。</p>
+            <div class="library-meta"><span>振り返り</span><span>未整理メモ</span><span>秘書アプリ</span></div>
+          </article>
+
+          <article class="library-card" data-category="Paw Lab Notes" data-keywords="ai料金 従量課金 月額サブスク 利用上限 タッチパネル 厨房">
+            <span class="codex-card-category">Paw Lab Notes</span>
+            <h3>AI料金OS｜従量課金・月額サブスク・利用上限</h3>
+            <p>「お金が増える」のが従量課金。「待ち時間が増える」のが利用上限。飲食店の注文でAI料金を理解するカード。</p>
+            <div class="library-meta"><span>料金OS</span><span>比喩</span><span>ChatGPT Plus</span></div>
+          </article>
+        </div>
+        <p id="emptyMessage" class="empty-message">該当するカードはまだありません。研究秘書アプリ側にメモして、あとでカード化しましょう。</p>
+      </section>
+
+      <section class="section" id="assistant-flow">
+        <p class="section-label">Library Flow</p>
+        <h2>拾う・育てる・探す</h2>
+        <div class="concept-grid">
+          <article class="concept-box">
+            <strong>1. 研究秘書アプリで拾う</strong>
+            <p>講座中のスクショ、気づき、たとえ話、未整理メモをまず受け止める。</p>
+          </article>
+          <article class="concept-box">
+            <strong>2. Codex図書館で整理する</strong>
+            <p>要約、タグ、カテゴリ、画像、詳細メモをつけて、1カード1コンセプトに整える。</p>
+          </article>
+          <article class="concept-box">
+            <strong>3. 検索端末で再発見する</strong>
+            <p>あとからキーワードや棚で探し、Instagram、動画、研究カードへ再利用する。</p>
+          </article>
+        </div>
+        <p class="paw-note" style="margin-top: 28px;">
+          🐾 パウ所長の研究メモ：研究秘書アプリで拾い、Codex図書館で整理し、検索端末で再発見するワン。知の図書館は、Rika研究員の自分専用アカデミアだワン。
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const searchInput = document.getElementById('librarySearch');
+      const filterButtons = document.querySelectorAll('[data-filter]');
+      const cards = document.querySelectorAll('.library-card');
+      const emptyMessage = document.getElementById('emptyMessage');
+      let currentFilter = 'all';
+
+      function updateLibraryCards() {
+        const query = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        cards.forEach(function(card) {
+          const category = card.dataset.category;
+          const keywords = card.dataset.keywords.toLowerCase();
+          const text = card.textContent.toLowerCase() + ' ' + keywords;
+          const matchesFilter = currentFilter === 'all' || category === currentFilter;
+          const matchesSearch = query === '' || text.includes(query);
+          const shouldShow = matchesFilter && matchesSearch;
+
+          card.dataset.hidden = shouldShow ? 'false' : 'true';
+          if (shouldShow) visibleCount += 1;
+        });
+
+        emptyMessage.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      searchInput.addEventListener('input', updateLibraryCards);
+
+      filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          filterButtons.forEach(function(item) { item.classList.remove('active'); });
+          button.classList.add('active');
+          currentFilter = button.dataset.filter;
+          updateLibraryCards();
+        });
+      });
+    </script>
+  </body>
+</html>

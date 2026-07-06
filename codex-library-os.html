@@ -118,7 +118,6 @@
         display: none;
       }
 
-
       .library-subtitle {
         margin: -6px 0 14px;
         color: var(--muted);
@@ -158,6 +157,22 @@
       .library-body {
         margin-top: 14px;
         color: var(--muted);
+      }
+
+      .library-body h4 {
+        margin: 22px 0 8px;
+        color: var(--ink);
+      }
+
+      .library-body ul {
+        padding-left: 1.2em;
+      }
+
+      .reference-link {
+        display: inline-block;
+        margin-top: 8px;
+        color: var(--accent);
+        font-weight: 900;
       }
 
       .library-meta {
@@ -257,11 +272,12 @@
         </p>
 
         <div class="terminal-controls" aria-label="カード検索とカテゴリフィルター">
-          <input id="librarySearch" class="terminal-search" type="search" placeholder="キーワードで検索：Cloudflare / Claude Code / Canva / バイブコーディング" />
+          <input id="librarySearch" class="terminal-search" type="search" placeholder="キーワードで検索：価値観OS / Claude Code / Canva / バイブコーディング" />
           <div class="filter-buttons" aria-label="カテゴリフィルター">
             <button type="button" class="active" data-filter="all">すべて</button>
             <button type="button" data-filter="Learning Log">Learning Log</button>
             <button type="button" data-filter="Research Card">Research Card</button>
+            <button type="button" data-filter="Human OS Research">Human OS Research</button>
             <button type="button" data-filter="Structure Diagram">Structure Diagram</button>
             <button type="button" data-filter="Tool Workflow">Tool Workflow</button>
             <button type="button" data-filter="Paw Lab Notes">Paw Lab Notes</button>
@@ -270,6 +286,46 @@
         </div>
 
         <div class="library-grid" id="libraryCards">
+          <article class="library-card" data-category="Human OS Research" data-keywords="価値観OS 恋愛OS 家族OS 友情OS Human OS 大黒摩季 あなただけ見つめてる YouTube コメント欄 ヒカル 飯田 令和 平成 1990年代 時代変化 自己喪失 依存 純愛 研究カード OS-001 2026.07">
+            <span class="codex-card-category">Human OS Research</span>
+            <p class="library-date">2026.07</p>
+            <p class="library-status">OS-001｜価値観OSシリーズ</p>
+            <h3>価値観OSは時代とともにアップデートされる</h3>
+            <p class="library-subtitle">同じ作品でも、時代が変われば「純愛」は「依存」にも聞こえる</p>
+            <p class="library-summary">YouTubeコメント欄で見えた夫婦・友情・家族の優先順位の違いをきっかけに、1990年代の楽曲「あなただけ見つめてる」を読み直し、作品ではなく受け取る人間OSが変化するという仮説を整理した研究カード。</p>
+            <div class="library-meta"><span>価値観OS</span><span>恋愛OS</span><span>家族OS</span><span>友情OS</span><span>Human OS</span><span>YouTube観察</span><span>歌詞研究</span><span>時代変化</span></div>
+            <details class="library-details">
+              <summary>研究カードを読む</summary>
+              <div class="library-body">
+                <h4>一文要約</h4>
+                <p><strong>作品は変わらない。変わるのは、その作品を受け取る人間OSである。</strong></p>
+
+                <h4>研究のきっかけ</h4>
+                <p>YouTubeでヒカルさんのチャンネルに出演している飯田さんに関する動画と、そのコメント欄を観察した。</p>
+                <p>コメント欄では、「結婚したら夫婦を最優先にするべき」「友情より家族」「居候なら自分から出るべき」という意見が多く見られた一方で、「友情も大切」「ライフステージが変われば人間関係も変化する」という異なる価値観も存在していた。</p>
+                <p>この観察を通して、人は同じ出来事を見ていても、なぜここまで判断が分かれるのだろうという疑問を持った。</p>
+                <p>その後、大黒摩季さんの代表曲「あなただけ見つめてる」を改めて聴き直したところ、1990年代には献身的な恋愛として受け止められやすかった表現が、現代では自己喪失や依存とも解釈されることに気づいた。</p>
+                <p>この二つの観察から、変わったのは作品ではなく、それを受け止める人々の価値観OSなのではないかという仮説に至った。</p>
+
+                <h4>Human OS考察</h4>
+                <p>「あなただけ見つめてる」の主人公は、恋人を喜ばせるために少しずつ自分を変えていく。化粧、趣味、友人関係、服装、言葉遣い、生活習慣が恋人中心へ移っていく。</p>
+                <p>当時は「好きな人のために変われること」が愛情として受け止められることも多かった。しかし現代では、自分らしさを失っている、恋愛依存ではないか、自己犠牲が大きすぎる、という読み方をする人も少なくない。</p>
+                <p>歌詞は変わっていない。変わったのは、人間OSである。</p>
+
+                <h4>観察結果</h4>
+                <p>今回のコメント欄でも、恋愛OS、家族OS、友情OS、常識OS、ライフステージOSなど、異なる価値観が同じ出来事を別々に解釈していた。</p>
+                <p>つまり、コメント欄で見えていたのは特定の個人だけではなく、視聴者それぞれの価値観OSだった。</p>
+
+                <h4>パウ所長の研究メモ</h4>
+                <p class="paw-note">🐾 YouTubeのコメント欄を観察していると、「夫婦を最優先にするべき」「友情も大切」「ライフステージによって人間関係は変わる」など、さまざまな価値観OSが見えてきたワン。作品は変わらないワン。変わるのは、その作品を受け取る人間OSだワン。</p>
+
+                <h4>参考資料</h4>
+                <p>参考作品：大黒摩季「あなただけ見つめてる」</p>
+                <a class="reference-link" href="https://youtu.be/xMOmmwD4xWo?is=GZtzGvYPZs14Fnwp" target="_blank" rel="noopener noreferrer">YouTubeで参考動画を見る</a>
+                <p>関連観察：ヒカルさんのYouTubeチャンネルにおける飯田さんに関する動画とコメント欄の観察（2026年7月）</p>
+              </div>
+            </details>
+          </article>
 
           <article class="library-card" data-category="AI制作OS / Human OS観察 / アプリ開発" data-keywords="AIコーディング Claude Code Codex 思想設計 非エンジニア Human OS 研究秘書アプリ 小さなデジタル空間 設計思想 原文保存 2026.07">
             <span class="codex-card-category">AI制作OS / Human OS観察 / アプリ開発</span>
@@ -302,6 +358,7 @@
               </div>
             </details>
           </article>
+
           <article class="library-card" data-category="Structure Diagram" data-keywords="claude code codex chatgpt 開発机 相談机 ai制作os">
             <span class="codex-card-category">Structure Diagram</span>
             <h3>AI Coding Tools｜相談机から開発机へ</h3>
@@ -365,7 +422,7 @@
           </article>
         </div>
         <p class="paw-note" style="margin-top: 28px;">
-          🐾 パウ所長の研究メモ：研究秘書アプリで拾い、Codex図書館で整理し、検索端末で再発見するワン。知の図書館は、Rika研究員の自分専用アカデミアだワン。
+          🐾 パウ所長の研究メモ：学習ログは制作・学びの足あと、研究カードは観察から生まれた知の標本だワン。分けて保存すると、あとで探しやすくなるワン。
         </p>
       </section>
     </main>

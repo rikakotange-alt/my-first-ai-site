@@ -118,6 +118,48 @@
         display: none;
       }
 
+
+      .library-subtitle {
+        margin: -6px 0 14px;
+        color: var(--muted);
+        font-weight: 800;
+      }
+
+      .library-date,
+      .library-status {
+        display: inline-block;
+        margin: 0 8px 10px 0;
+        color: var(--green);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 900;
+      }
+
+      .library-summary {
+        margin-top: 16px;
+        padding: 14px 16px;
+        border-left: 5px solid var(--accent);
+        background: rgba(184, 100, 58, 0.08);
+      }
+
+      .library-details {
+        margin-top: 18px;
+        border-top: 1px solid var(--line);
+        padding-top: 14px;
+      }
+
+      .library-details summary {
+        cursor: pointer;
+        color: var(--accent);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+        font-weight: 900;
+      }
+
+      .library-body {
+        margin-top: 14px;
+        color: var(--muted);
+      }
+
       .library-meta {
         display: flex;
         flex-wrap: wrap;
@@ -223,10 +265,43 @@
             <button type="button" data-filter="Structure Diagram">Structure Diagram</button>
             <button type="button" data-filter="Tool Workflow">Tool Workflow</button>
             <button type="button" data-filter="Paw Lab Notes">Paw Lab Notes</button>
+            <button type="button" data-filter="AI制作OS / Human OS観察 / アプリ開発">AI制作OS</button>
           </div>
         </div>
 
         <div class="library-grid" id="libraryCards">
+
+          <article class="library-card" data-category="AI制作OS / Human OS観察 / アプリ開発" data-keywords="AIコーディング Claude Code Codex 思想設計 非エンジニア Human OS 研究秘書アプリ 小さなデジタル空間 設計思想 原文保存 2026.07">
+            <span class="codex-card-category">AI制作OS / Human OS観察 / アプリ開発</span>
+            <p class="library-date">2026.07</p>
+            <p class="library-status">ステータス：原文保存</p>
+            <h3>AIコーディング時代の思想設計</h3>
+            <p class="library-subtitle">コードを書く人から、コードに設計思想を渡す人へ</p>
+            <p class="library-summary">AIコーディング時代には、コードを書ける人だけでなく、何を作りたいのか、どんな構造にしたいのか、何を保存しどう使いたいのかを言語化できる人が、小さなデジタル空間を作れるようになる。</p>
+            <div class="library-meta"><span>AIコーディング</span><span>Claude Code</span><span>Codex</span><span>思想設計</span><span>非エンジニア</span><span>Human OS</span><span>研究秘書アプリ</span><span>小さなデジタル空間</span><span>設計思想</span></div>
+            <details class="library-details">
+              <summary>本文全文を読む</summary>
+              <div class="library-body">
+                <p>これまで、Instagram、YouTube、TikTokのようなメガプラットフォームは、専門的なエンジニアがコードを書き、人間の行動を設計する巨大なデジタル空間だった。</p>
+                <p>ユーザーは、自分の意思でアプリを使っているように感じていても、実際には企業が設計した画面、ボタン、通知、レコメンド、アルゴリズムの中で行動している。</p>
+                <p>つまり、これまでの多くの人は、コードで作られた空間の中を歩く側だった。</p>
+                <p>しかし、Claude CodeやCodexのようなAIコーディングツールが出てきたことで、この構造に変化が起きはじめている。</p>
+                <p>非エンジニアやプログラミング知識が少ない人でも、自然言語で「こういうものを作りたい」と説明し、AIにコードを書いてもらいながら、自分のための小さなアプリやWebサイトを作れる可能性が広がっている。</p>
+                <p>これは、すべての人がプロのエンジニアになるという意味ではない。</p>
+                <p>むしろ重要になるのは、コードそのものを書く力だけではなく、コードに渡す前の設計思想である。</p>
+                <p>何を作りたいのか。<br>なぜそれを作りたいのか。<br>何を保存したいのか。<br>どう分類したいのか。<br>誰に見せたいのか。<br>何を見せたくないのか。<br>あとでどう再利用したいのか。</p>
+                <p>このような問いに答える力が、AIコーディング時代の制作力になっていく。</p>
+                <p>これまでのメガプラットフォームでは、企業やエンジニアがコードを設計し、多くのユーザーはその設計された空間の中で行動していた。</p>
+                <p>しかしAIコーディング時代には、個人もAIを介して、自分のための小さな道具、自分の思想を反映した研究棚、自分専用の検索端末を作れるようになる。</p>
+                <p>Rika研究員にとっての研究秘書アプリは、まさにその実験である。</p>
+                <p>巨大なSNSを作るのではなく、自分の観察ログ、Human OS研究カード、学習ログ、Codexメモ、Instagramの種を保存し、あとで検索・再利用できる小さな知の装置を作る。</p>
+                <p>メガプラットフォームに吸い込まれる側から、自分の観察ログを保存する小さな研究室を作る側へ。</p>
+                <p>これが、AIコーディング時代の大きな変化である。</p>
+                <p><strong>結論：</strong><br>これからは、コードを書ける人だけでなく、コードに渡す設計思想を持つ人が、小さなデジタル空間を作れるようになる。</p>
+                <p><strong>観察メモ：</strong><br>AIコーディング時代に必要なのは、全員がコード職人になることではない。<br>自分が何を観察し、何を保存し、どんな構造で未来の自分に渡したいのかを考える力である。</p>
+              </div>
+            </details>
+          </article>
           <article class="library-card" data-category="Structure Diagram" data-keywords="claude code codex chatgpt 開発机 相談机 ai制作os">
             <span class="codex-card-category">Structure Diagram</span>
             <h3>AI Coding Tools｜相談机から開発机へ</h3>

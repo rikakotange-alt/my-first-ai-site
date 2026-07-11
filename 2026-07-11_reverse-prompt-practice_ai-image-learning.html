@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026.07.11｜画像生成学習ログ｜完成画像から学ぶ、逆算プロンプト</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a class="logo" href="index.html">Rika Creative Codex</a>
+        <div class="nav-links">
+          <a href="index.html#learning-log-shelf">Learning Log</a>
+          <a href="index.html#visual-log">Visual Log</a>
+          <a href="index.html#learning-os">Learning OS</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Learning Log｜2026.07.11</p>
+        <h1>画像生成学習ログ｜完成画像から学ぶ、逆算プロンプト</h1>
+        <p>
+          完成した画像を観察し、主役・シーン・雰囲気・色味・スタイル・構図・用途に分解しながら、
+          画像生成プロンプトの感覚をつかむ練習方法を記録します。
+        </p>
+        <a class="primary-button" href="index.html">Codexへ戻る</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <p class="section-label">Background</p>
+        <h2>きっかけ</h2>
+        <p class="section-intro">
+          Z世代を中心にアナログ回帰が起きている、という記事を読みました。
+          AIによる効率化やスピード社会が進む一方で、本やレコード、手書き、対面の時間など、
+          手触りのあるアナログ体験があらためて価値として見直されている、という内容でした。
+        </p>
+        <p class="section-intro">
+          そこから、AI時代のビジネス戦略として、デジタルだけで完結するのではなく、
+          リアルな体験やオフラインの人間関係を組み合わせた体験型サービスが増えていくのかもしれないと感じました。
+        </p>
+      </section>
+
+      <section class="section">
+        <p class="section-label">ChatGPT Dialogue</p>
+        <h2>3枚スライドに整理する</h2>
+        <p class="section-intro">
+          この記事の要約を3枚のスライドにするならどう分けるとよいかをChatGPTに相談し、
+          「なぜ今、アナログ回帰なのか」「若者が求める手触りの価値」「AI時代の戦略ヒント」
+          という3つのテーマに整理してもらいました。
+        </p>
+        <div class="codex-card-grid">
+          <article class="codex-card">
+            <span class="codex-card-category">Slide 01</span>
+            <h3>なぜ今、アナログ回帰なのか</h3>
+            <p>AIやスマホ、効率化が進みすぎた反動として、若者がアナログに目を向ける流れを導入として整理しました。</p>
+            <ul class="codex-card-tags"><li>脱タイパ</li><li>デジタル疲れ</li><li>本物感</li></ul>
+          </article>
+          <article class="codex-card">
+            <span class="codex-card-category">Slide 02</span>
+            <h3>若者が求める手触りの価値</h3>
+            <p>レコード、紙の本、手書き、対面の会話など、五感で感じられる体験の価値を具体例として整理しました。</p>
+            <ul class="codex-card-tags"><li>五感</li><li>オフライン</li><li>体験価値</li></ul>
+          </article>
+          <article class="codex-card">
+            <span class="codex-card-category">Slide 03</span>
+            <h3>AI時代の戦略ヒント</h3>
+            <p>AIやデジタル施策に、リアルな体験や人間関係を組み合わせるビジネス戦略として整理しました。</p>
+            <ul class="codex-card-tags"><li>AI戦略</li><li>体験設計</li><li>トキパ</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Reverse Prompt Practice</p>
+        <h2>完成画像からプロンプトを逆算する</h2>
+        <p class="section-intro">
+          その後、それぞれのテーマに合わせて画像を生成してもらったところ、イメージに近いビジュアルができました。
+          そこで今度は逆に、「この画像を作るなら、どんなプロンプトになるのか」という視点で画像を見直し、
+          Lesson11のプロンプトフォーマットに沿って、主役、シーン、雰囲気、色味、スタイル、構図、用途に分けて
+          要素を書き起こしてもらいました。
+        </p>
+        <p class="section-intro">
+          この対話の流れの中で思いついたのが、「逆算プロンプト練習」です。
+          先に完成した画像を観察し、そこからプロンプトの要素を分解していくことで、
+          画像生成の感覚を少しずつつかめるのではないかと感じました。
+        </p>
+        <div class="note-list">
+          <article class="highlight-note">
+            <h3>今回の発見</h3>
+            <p>プロンプトをいきなり書くのではなく、完成画像を読むことで、画像生成の指示に必要な要素を観察できるようになる。</p>
+          </article>
+          <article class="paw-note">
+            <h3>🐾 パウ所長の研究メモ</h3>
+            <p>画像は、ただ見るだけじゃなくて、分解して読むこともできるワン。完成画像は、プロンプトの化石みたいなものだワン！</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Practice Template</p>
+        <h2>逆算プロンプト練習の手順</h2>
+        <div class="codex-card-grid">
+          <article class="codex-card">
+            <span class="codex-card-category">Step 01</span>
+            <h3>参考画像を選ぶ</h3>
+            <p>いいなと思った画像、使いたい雰囲気の画像を選びます。</p>
+          </article>
+          <article class="codex-card">
+            <span class="codex-card-category">Step 02</span>
+            <h3>画像を観察する</h3>
+            <p>何が主役か、どんな場面か、どんな感情や雰囲気があるかを見ます。</p>
+          </article>
+          <article class="codex-card">
+            <span class="codex-card-category">Step 03</span>
+            <h3>要素に分解する</h3>
+            <p>主役、シーン、雰囲気、色味、スタイル、構図、用途に分けて書き出します。</p>
+          </article>
+          <article class="codex-card">
+            <span class="codex-card-category">Step 04</span>
+            <h3>もう一度生成してみる</h3>
+            <p>逆算したプロンプトで画像を作り、元画像との違いや足りなかった情報を確認します。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Related Visual</p>
+        <h2>関連画像</h2>
+        <div class="note-list">
+          <article>
+            <h3>画像生成学習ログ用ビジュアル</h3>
+            <p>Lesson11のプロンプトフォーマットを学びながら、完成画像から要素を読み取る練習を表す関連画像です。</p>
+            <img src="2026-07-11_reverse-prompt-practice_ai-image-learning.png" alt="生成AI画像生成を学ぶ女性とデスク周りで眠るブルーのフレンチブルドッグ。プロンプトフォーマットの要素が表示された学習ログ用イラスト" />
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Slides and Prompts</p>
+        <h2>3枚スライドと生成プロンプト</h2>
+        <p class="section-intro">
+          スライド画像と、それぞれの生成プロンプトを折りたたみで残します。
+          画像ファイルはGitHubにアップロードして、同じファイル名で参照します。
+        </p>
+        <div class="note-list">
+          <article>
+            <h3>スライド画像</h3>
+            <p>3枚スライドは以下のファイル名で管理します。</p>
+            <ul>
+              <li>2026-07-11_ai-strategy-analog-return_slide01_why-analog-return.png</li>
+              <li>2026-07-11_ai-strategy-analog-return_slide02_tactile-value.png</li>
+              <li>2026-07-11_ai-strategy-analog-return_slide03_strategy-hints.png</li>
+            </ul>
+            <img src="2026-07-11_ai-strategy-analog-return_slide01_why-analog-return.png" alt="なぜ今、アナログ回帰なのかを表すスライド画像" />
+            <img src="2026-07-11_ai-strategy-analog-return_slide02_tactile-value.png" alt="若者が求める手触りの価値を表すスライド画像" />
+            <img src="2026-07-11_ai-strategy-analog-return_slide03_strategy-hints.png" alt="AI時代の戦略ヒントを表すスライド画像" />
+          </article>
+          <article>
+            <details>
+              <summary><strong>スライド1｜なぜ今、アナログ回帰？</strong></summary>
+              <pre><code>以下のテーマと各要素をもとに画像を生成してください。
+
+【テーマ】
+AI時代に起きる若者のアナログ回帰
+
+【要素】
+## 主役
+AIやスマートフォンに囲まれた若者と、その横に置かれた紙の本、ノート、レコード、手書きメモなどのアナログアイテム。デジタル社会の速さと、アナログへの静かな回帰を象徴するビジュアル。
+
+## シーン
+近未来的なデスクや部屋の中で、スマホやAI画面から少し距離を置き、若者が紙の本やノートに目を向けている。背景には情報が流れるデジタル画面があり、手元には温かみのあるアナログ道具がある。
+
+## 雰囲気・感情
+デジタル疲れ、少しの戸惑い、でも静かな安心感がある。効率化やスピード社会から一歩離れて、自分の感覚を取り戻していく雰囲気。
+
+## 色味
+青系・シアン系のデジタル感に、紙や木目のベージュ・暖色を少し加える。冷たいデジタルと温かいアナログの対比が伝わる色味。
+
+## スタイル
+教育系スライド向けのデジタルイラスト。近未来感とアナログ感が共存する、見やすく整理されたビジュアル。
+
+## カメラ・構図
+横長16:9。左側にデジタル画面やAI・スマホの要素、右側に本やノートなどのアナログ要素を配置。中央に若者を置き、左右の対比がひと目で分かる構図。上部にタイトルを入れやすい余白を作る。
+
+## 用途
+3枚スライドの1枚目。テーマ導入用。タイトル「なぜ今、アナログ回帰？」を入れるための表紙ビジュアル。</code></pre>
+            </details>
+          </article>
+          <article>
+            <details>
+              <summary><strong>スライド2｜若者が求める“手触りの価値”</strong></summary>
+              <pre><code>以下のテーマと各要素をもとに画像を生成してください。
+
+【テーマ】
+若者が求める手触りのあるアナログ体験
+
+【要素】
+## 主役
+Z世代の若者たちと、レコード、紙の本、手書きノート、ボードゲーム、フィルムカメラ、対面の会話など、五感で感じられるアナログ体験。
+
+## シーン
+カフェや部屋のような落ち着いた空間で、若者たちがスマホから離れ、レコードを聴いたり、紙の本を読んだり、ボードゲームを楽しんだり、手書きでメモを取ったりしている。オフラインの人間関係やリアルな体験が伝わる場面。
+
+## 雰囲気・感情
+あたたかい、安心感がある、ゆっくりした時間、親密さ、楽しさ。AI生成コンテンツがあふれる時代だからこそ、本物の体験が贅沢に感じられる雰囲気。
+
+## 色味
+暖色系、ベージュ、ブラウン、やわらかいオレンジ。少しレトロで落ち着いた色味。デジタル画面の青は控えめにする。
+
+## スタイル
+ポスター風または雑誌風のデジタルイラスト。レトロ感と現代的な洗練さがある、Instagramや学習スライドに使いやすいビジュアル。
+
+## カメラ・構図
+横長16:9。中央に若者たちのオフライン体験を配置し、周囲にレコード、本、手書きメモ、ボードゲームなどを自然に散りばめる。タイトルや短いキーワードを入れやすい余白を上部または左側に作る。
+
+## 用途
+3枚スライドの2枚目。具体例紹介用。タイトル「若者が求める“手触りの価値”」を入れるための中盤ビジュアル。</code></pre>
+            </details>
+          </article>
+          <article>
+            <details>
+              <summary><strong>スライド3｜AI時代の戦略ヒント</strong></summary>
+              <pre><code>以下のテーマと各要素をもとに画像を生成してください。
+
+【テーマ】
+AI時代のビジネス戦略としてのアナログ体験
+
+【要素】
+## 主役
+AI・デジタル技術と、リアルなアナログ体験を組み合わせた新しい戦略。オンラインとオフライン、効率と体験価値がつながっていることを象徴するビジュアル。
+
+## シーン
+未来的な戦略ボードやビジネス会議のような空間で、AI分析画面、SNS、デジタルマーケティングの要素と、ポップアップイベント、紙の招待状、手書きカード、実店舗体験、レコードや本などのアナログ要素がひとつの流れとして整理されている。
+
+## 雰囲気・感情
+前向き、戦略的、知的、実用的。デジタルだけに偏らず、リアルな体験や人間関係を価値として設計していく印象。
+
+## 色味
+青と白を基調に、アクセントとして暖色やゴールドを少し入れる。AI時代の知的さと、アナログ体験の温かさが両方伝わる色味。
+
+## スタイル
+インフォグラフィック風のデジタルイラスト。教育系・ビジネス系スライドに合う、整理された見やすい図解ビジュアル。
+
+## カメラ・構図
+横長16:9。左から右へ「AI分析 → デジタル施策 → アナログ体験 → 濃密な価値」という流れが見える構図。矢印や線でつながりを表現し、4つの要素を均等に配置する。余白を多めに取り、文字を後から入れやすくする。
+
+## 用途
+3枚スライドの3枚目。まとめ・戦略提案用。タイトル「AI時代の戦略ヒント」を入れるための締めビジュアル。</code></pre>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Research Result</p>
+        <h2>今回の一文</h2>
+        <div class="note-list">
+          <article class="highlight-note">
+            <h3>画像生成は、プロンプトを書く練習だけでなく、完成画像を読む練習でもある。</h3>
+            <p>完成画像を観察し、要素を分解することで、次にどんな指示を出せばよいかを少しずつつかめるようになると感じました。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>🐾 Reviewed by パウ所長｜Rika Creative Codex</p></footer>
+  </body>
+</html>

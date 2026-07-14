@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026.07.14｜WorkにYouTubeコメント分析を依頼した実験ログ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a class="logo" href="index.html">Rika Creative Codex</a>
+      <div class="nav-links">
+        <a href="index.html#learning-log-shelf">Learning Logs</a>
+        <a href="index.html#research-cards">Research Cards</a>
+        <a href="index.html#visual-log">Visual Log</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Work Experiment Log｜2026.07.14</p>
+      <h1>WorkにYouTubeコメント分析を依頼した実験ログ</h1>
+      <p>ChatGPTとWorkを連携できるようになったので、役割を分けて何かひとつ最後まで試してみたいと思いました。そこで、ChatGPTで調査を設計し、Workでコメント分類とExcel化を行う実験に取り組みました。</p>
+      <a class="primary-button" href="index.html">Codexへ戻る</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <p class="section-label">Background</p>
+      <h2>連携しただけで終わらせず、実際の作業で試してみたかった</h2>
+      <p class="section-intro">ChatGPTとWorkの使い分けは、説明を読むだけではまだ少し抽象的でした。そこで、ひとつの題材を使い、考える工程と実行する工程を本当に分けられるかを試しました。</p>
+      <div class="principle-grid">
+        <article class="principle-card"><span>ChatGPT</span><h3>調査設計</h3><p>目的、対象、取得条件、分類項目、出力形式、注意点を整理し、Workへ渡す依頼文を作りました。</p></article>
+        <article class="principle-card"><span>Work</span><h3>分類・集計・Excel化</h3><p>コメントを読み取り、主分類、補助分類、反応対象、感情傾向などを付けて、Excelへまとめました。</p></article>
+        <article class="principle-card"><span>ChatGPT</span><h3>結果の読み解き</h3><p>集計された結果から、視聴者が何に反応していたのかを対話で整理しました。</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-label">Method</p>
+      <h2>YouTubeへ直接取り込めなかったため、スクリーンショットを使いました</h2>
+      <p>YouTube側からコメントを直接取得できない環境だったため、コメント欄のスクリーンショットをWorkへ渡しました。取得方法を変えても分析の流れを続けられるかを見る、代替手段の実験にもなりました。</p>
+      <div class="note-list">
+        <article><h3>対象</h3><p>YouTube Shorts動画のTop表示コメント欄。</p></article>
+        <article><h3>分析件数</h3><p>スクリーンショット内で確認できた親コメント52件。</p></article>
+        <article><h3>出力</h3><p>「分析サマリー」「コメント分類」「分類基準」「調査メモ」の4シートを収録したExcel。</p></article>
+        <article><h3>記録した注意点</h3><p>Top表示からの抽出であり、コメント欄全体を無作為に抽出した標本ではないことを明記しました。</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-label">Results</p>
+      <h2>52件のコメントから見えた主な反応</h2>
+      <div class="principle-grid">
+        <article class="principle-card"><span>12件｜23.1%</span><h3>ひろゆきの発言支持</h3><p>発言内容そのものに加え、発言者への信頼や納得感が反応に影響しているように見えました。</p></article>
+        <article class="principle-card"><span>9件｜17.3%</span><h3>未成年整形への倫理・安全懸念</h3><p>未成年者本人だけでなく、医師や周囲の大人が負う責任にも視線が向いていました。</p></article>
+        <article class="principle-card"><span>9件｜17.3%</span><h3>キャバ嬢と芸能人の区別</h3><p>同じ外見や整形の話でも、職業や立場によって評価基準を分ける反応がありました。</p></article>
+        <article class="principle-card"><span>8件｜15.4%</span><h3>出演者・医師・メディアへの不信</h3><p>テーマだけでなく、誰が出演し、誰が説明し、番組がどう見せたかへの反応も目立ちました。</p></article>
+        <article class="principle-card"><span>6件｜11.5%</span><h3>自然美・土屋アンナへの称賛</h3><p>整形への賛否だけでなく、自然な外見や本人らしさを支持する価値観も表れていました。</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="section-label">Learning</p>
+      <h2>テンプレートは、分類名ではなく調査の骨組みとして使えました</h2>
+      <p>別テーマの動画でも、目的、取得条件、分類、集計、限界の記録という基本構造はそのまま使えました。一方で、主分類は動画内容に合わせて作り直す必要がありました。</p>
+      <article class="highlight-note"><h3>今回わかったこと</h3><p>Work依頼テンプレートは、固定された答えを出す型ではなく、対象に合わせて分類軸を作り替えるための土台として使えそうです。</p></article>
+      <article class="highlight-note"><h3>スクリーンショット経由で追加したい注意点</h3><p>取得範囲、画面外のコメント、重複、文章の途切れ、並び順、読み取れない投稿日や返信数などを、調査メモへ残す必要があります。</p></article>
+    </section>
+
+    <section class="section">
+      <p class="section-label">Workflow</p>
+      <h2>今回一周した作業フロー</h2>
+      <figure class="wide-image-card" style="padding: 18px; margin: 30px 0;">
+        <img src="2026-07-14_chatgpt-work-role-guide.png" alt="パウ所長がChatGPTとWorkの役割分担を解説する図解。ChatGPTで調査を設計し、Workで収集・分類・ファイル化し、NotionとCodexへつなぐ流れ。" />
+        <figcaption style="margin-top: 14px; color: var(--muted);">ChatGPTで考える → Workで実行する → ChatGPTで読み解く → Notionに再利用型を残す → Codexで学びとして伝える</figcaption>
+      </figure>
+      <article class="paw-note"><h3>🐾 パウ所長メモ</h3><p>連携は、つないだだけではまだ入口だワン。ひとつの仕事を最後まで流してみると、役割の違いが見えてくるワン！</p></article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>🐾 Reviewed by パウ所長｜Rika Creative Codex</p></footer>
+</body>
+</html>

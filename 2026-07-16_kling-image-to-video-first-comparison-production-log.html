@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kling Image to Video 初回比較実験｜Rika Creative Codex</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a class="logo" href="index.html">Rika Creative Codex</a>
+        <div class="nav-links"><a href="index.html#learning-log-shelf">Learning Logs</a><a href="index.html#update-log">Update Log</a></div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">PRODUCTION LOG｜2026.07.16</p>
+        <h1>Kling Image to Video 初回比較実験</h1>
+        <p>パウ所長の静止画に小さな動きを一つずつ加え、Klingで5秒動画を3本生成。CapCutで約16秒の比較動画にまとめるまでを一周した、最初の制作ログです。</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <p class="section-label">Why</p>
+        <h2>完成作品より先に、動きの癖を確かめる</h2>
+        <p class="section-intro">最初から長い一本を作ろうとせず、顔や図解を崩さずに動かせる範囲を確かめることを目的にしました。成功したカットだけでなく、不自然になった試作も比較材料として残しています。</p>
+        <div class="note-list">
+          <article><h3>目的</h3><p>静止画から自然な短尺動画を作る流れを体験し、Klingで作ったカットをCapCutへつなぐ。</p></article>
+          <article><h3>検証方法</h3><p>動きを一つずつ追加し、前の生成結果との差分を確認する。</p></article>
+          <article class="paw-note"><h3>🐾 パウ所長の研究メモ</h3><p>動きを盛るより、ひとつずつ確かめる方が研究らしいワン。</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Workflow</p>
+        <h2>今回つながった制作ライン</h2>
+        <p class="section-intro"><strong>ChatGPTで企画・プロンプト作成 → 静止画をKlingへ読み込む → 5秒動画を3種類生成 → CapCutで比較編集 → NotionとCodexへ記録</strong></p>
+        <div class="codex-card-grid">
+          <article class="codex-card"><span class="codex-card-category">Kling Settings</span><h3>初回の基本設定</h3><ul><li>Kling Video 3.0</li><li>720p</li><li>5秒</li><li>固定カメラ</li><li>終了フレーム未使用</li><li>小さな動きを一つずつ追加</li></ul></article>
+          <article class="codex-card"><span class="codex-card-category">Editing</span><h3>CapCutでのまとめ方</h3><ul><li>冒頭に元の静止画</li><li>3本の5秒クリップを接続</li><li>左上に比較テロップ</li><li>表示時間は約2.5〜3秒</li><li>演出はフェードインのみ</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Three Tests</p>
+        <h2>動きを一つずつ増やした3つの比較</h2>
+        <div class="codex-card-grid">
+          <article class="codex-card"><span class="codex-card-category">Kling 01</span><h3>自然なまばたき</h3><p>1〜2回のまばたきと、わずかな首かしげを生成。顔と背景の一貫性が保たれ、静止画に自然な生命感を加えられました。</p><ul class="codex-card-tags"><li>採用候補</li><li>顔崩れ少</li></ul></article>
+          <article class="codex-card"><span class="codex-card-category">Kling 02</span><h3>指し棒の動きを追加</h3><p>まばたきに加えて、指し棒を少し動かす指示を追加。図解を説明するキャラクターとして自然な動きになりました。</p><ul class="codex-card-tags"><li>採用候補</li><li>説明動作</li></ul></article>
+          <article class="codex-card"><span class="codex-card-category">Kling 03</span><h3>口元の動きもテスト</h3><p>話している印象を出すため口元を動かしました。顔全体は保たれたものの、口の開き方が大きく、不自然さが残りました。</p><ul class="codex-card-tags"><li>比較用</li><li>要調整</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Result</p>
+        <h2>今回の検証結果</h2>
+        <div class="note-list">
+          <article class="highlight-note"><h3>◎ まばたき</h3><p>小さな動きで自然さを加えやすい。</p></article>
+          <article class="highlight-note"><h3>◎ 指し棒</h3><p>解説キャラクターとして使いやすい。</p></article>
+          <article><h3>△ 口元</h3><p>動きが大きくなりやすく、ナレーションはCapCut側で補う方が安定しそうです。</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Learning</p>
+        <h2>長い一本より、使える5秒を集める</h2>
+        <p class="section-intro">設定を増やすほど良くなるのではなく、動きを小さく限定した方がキャラクターと背景の一貫性を保ちやすいと分かりました。AI動画生成では、長尺を一度に作るより、5秒前後の使えるカットを複数生成し、CapCutで編集する方が品質を管理しやすそうです。</p>
+        <div class="note-list">
+          <article><h3>次に試すこと</h3><p>口元を動かさず、軽いうなずきで話している印象を作る。指し棒の成功パターンを別の図解へ応用する。</p></article>
+          <article><h3>作品への応用</h3><p>「ロボットを愛する中年男の青春」で、目や胸のランプが静かに点灯する起動シーンへ発展させる。</p></article>
+          <article class="paw-note"><h3>🐾 Reviewed by パウ所長</h3><p>静止画、動画化、編集、記録まで、新しい制作ラインが一本つながったワン。</p></article>
+        </div>
+        <p><a class="primary-button" href="index.html#learning-log-shelf">学習ログ棚へ戻る</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>🐾 Reviewed by パウ所長｜Rika Creative Codex</p></footer>
+  </body>
+</html>

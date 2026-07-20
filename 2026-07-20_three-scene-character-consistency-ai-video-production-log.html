@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2026.07.20｜3シーンで同じ人物を保つ｜AI動画の一貫性と止めどき</title>
+    <title>2026.07.20｜生成AIで一貫性を保った動画制作の練習</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -18,8 +18,8 @@
       </nav>
       <div class="hero-content">
         <p class="eyebrow">Production Log｜2026.07.20</p>
-        <h1>3シーンで同じ人物を保つ｜AI動画の一貫性と「止めどき」を学んだ制作ログ</h1>
-        <p>同じキャラクターで、起床、朝食、身支度の3シーンを作ってみました。今回は、うまく生成できたかだけではなく、どこに違和感があったか、どこまで直すか、どこで止めるかまで含めて残しておきたいと思います。</p>
+        <h1>生成AIで一貫性を保った動画制作の練習｜基準画像から3シーン動画を作ってみた</h1>
+        <p>同じキャラクターで、起床、朝食、身支度の3シーンを作ってみました。完成した動画だけでなく、どこに違和感があったか、どこまで直すか、どこで止めるかまで含めて残します。</p>
         <a class="primary-button" href="index.html">Codexへ戻る</a>
       </div>
     </header>
@@ -27,19 +27,20 @@
     <main>
       <section class="section">
         <p class="section-label">Overview</p>
-        <h2>まずは、同じ人物に見える3シーンを作ってみた</h2>
-        <p class="section-intro">今回やりたかったのは、派手に動かすことよりも、顔立ち、黒髪ショート、年齢感、アニメ調の絵柄を保ちながら、朝の時間が少しずつ進んでいく流れを作ることでした。</p>
+        <h2>今回やってみたこと</h2>
+        <p class="section-intro">同じキャラクターの一貫性を保ちながら、3つの短いシーンを動画化しました。基準画像を1枚作り、その人物をもとにシーンごとの静止画を生成し、さらに動画へ展開しています。</p>
+        <p class="section-intro">今回は、単に画像や動画を作るだけではなく、同じ人物として見えるか、服装や髪型が保たれているか、場面の意味が伝わるか、どこまでを採用可能とするかまで観察しました。</p>
         <div class="note-list">
-          <article><h3>そろえたかったもの</h3><p>顔立ち、髪型、年齢感、絵柄、その人物らしさ。</p></article>
-          <article><h3>変えたもの</h3><p>パジャマと制服、寝室とリビングと鏡前、目覚め・朝食・身支度という場面。</p></article>
-          <article class="highlight-note"><h3>今回の作り方</h3><p>画像はすべてGPT Image 2.0で生成しました。基準画像だけは英語プロンプト、残りの3枚のシーン画像は日本語プロンプトで作成。動画は再生成分も含めて、すべて英語プロンプトで生成しました。</p></article>
+          <article><h3>制作テーマ</h3><p>朝のルーティン。起床、朝食、身支度の3シーン。</p></article>
+          <article><h3>人物の基準</h3><p>17歳の日本人男性。黒髪ショートで少し無造作。ブレザー制服、日本のアニメイラスト調。</p></article>
+          <article class="highlight-note"><h3>生成方法</h3><p>画像はすべてGPT Image 2.0で生成。基準画像は英語プロンプト、3枚のシーン画像は日本語プロンプト。動画は再生成分も含め、すべて英語プロンプトで生成しました。</p></article>
         </div>
       </section>
 
       <section class="section">
         <p class="section-label">Character Reference</p>
         <h2>先に、キャラクターの基準を決めた</h2>
-        <p class="section-intro">最初に基準画像を1枚作っておくと、そのあとに作る画像が本当に同じ人物に見えるかを比べやすい。今回はこの画像を、3シーンの共通の物差しにしました。</p>
+        <p class="section-intro">最初に基準画像を1枚作っておくと、そのあとに作る画像が本当に同じ人物に見えるかを比べやすい。今回はこの画像を、3シーン共通の物差しにしました。</p>
         <figure class="wide-image-card">
           <img src="lesson12_ai-tutor_00_character-reference.png" alt="黒髪ショートでブレザー制服を着た日本人の少年キャラクター基準画像" />
           <figcaption>GPT Image 2.0で、英語プロンプトを使って生成した基準画像。</figcaption>
@@ -47,15 +48,9 @@
       </section>
 
       <section class="section">
-        <p class="section-label">Scene Images</p>
-        <h2>3枚のシーン画像は、日本語プロンプトで作った</h2>
-        <p class="section-intro">基準画像をもとに、起床、朝食、身支度の3枚をGPT Image 2.0で生成しました。ここは日本語プロンプトで、場面や服装、朝の空気感を伝えながら作っています。</p>
-      </section>
-
-      <section class="section">
         <p class="section-label">Scene 01</p>
         <h2>起床｜朝の空気が伝わるところまで</h2>
-        <p class="section-intro">紺色のパジャマ姿で窓辺に立ち、朝日を浴びるシーンです。動画では、大きく動かすより、まばたきやカーテンの揺れくらいで朝の空気が出ればいいと思っていました。</p>
+        <p class="section-intro">紺色のパジャマ姿で窓ぎわに立ち、朝日を浴びる場面です。最初のシーンなので、朝らしい空気と人物の印象が自然に見えることを意識しました。</p>
         <figure class="wide-image-card">
           <img src="lesson12_ai-tutor_01_wakeup-window-pajamas.png" alt="紺色のパジャマ姿で朝の窓辺に立つ少年のアニメ画像" />
           <figcaption>GPT Image 2.0で、日本語プロンプトを使って生成したシーン1の静止画。</figcaption>
@@ -63,13 +58,13 @@
         <video controls playsinline preload="metadata" style="display:block;width:100%;max-width:920px;margin:28px auto;border-radius:20px;">
           <source src="2026-07-20_scene1-wakeup-video.mp4" type="video/mp4" />
         </video>
-        <div class="note-list"><article class="highlight-note"><h3>見ていて気になったこと</h3><p>大きな破綻はありませんでした。ただ、終盤で目が少し大きくなったように見えました。そこは気になったけれど、顔や髪型、パジャマ、朝の雰囲気は保たれていたので、この動画は採用しました。</p></article></div>
+        <div class="note-list"><article class="highlight-note"><h3>観察メモ</h3><p>顔や服装の一貫性は比較的安定していました。終盤で目が少し大きくなったように見えましたが、大きな破綻ではなく、朝の雰囲気も保たれていたので採用しました。</p></article></div>
       </section>
 
       <section class="section">
         <p class="section-label">Scene 02</p>
         <h2>朝食｜動きを小さくすると安定しやすかった</h2>
-        <p class="section-intro">同じパジャマ姿のまま、今度はリビングでトーストを食べるシーンです。場所は変わっても、同じ人物に見えることを優先しました。</p>
+        <p class="section-intro">同じ人物が、同じ紺色のパジャマ姿のまま、朝のリビングでトーストを食べる場面です。場所は変えても、人物の印象がつながって見えることを優先しました。</p>
         <figure class="wide-image-card">
           <img src="lesson12_ai-tutor_02_breakfast-toast-pajamas.png" alt="紺色のパジャマ姿でリビングの朝食をとる少年のアニメ画像" />
           <figcaption>GPT Image 2.0で、日本語プロンプトを使って生成したシーン2の静止画。</figcaption>
@@ -77,13 +72,13 @@
         <video controls playsinline preload="metadata" style="display:block;width:100%;max-width:920px;margin:28px auto;border-radius:20px;">
           <source src="2026-07-20_scene2-breakfast-video.mp4" type="video/mp4" />
         </video>
-        <div class="note-list"><article class="highlight-note"><h3>見ていて気になったこと</h3><p>人物、パジャマ、リビングの雰囲気はかなり安定していました。口元とトーストの接触が少し曖昧な瞬間はあったけれど、食べていることは自然に伝わる。3本の中では、いちばん素直にまとまった印象でした。</p></article></div>
+        <div class="note-list"><article class="highlight-note"><h3>観察メモ</h3><p>パジャマ姿と人物の雰囲気を維持できました。口元とトーストの接触が少し曖昧な瞬間はありましたが、朝食をとっている場面として自然に伝わり、3本の中では比較的安定していました。</p></article></div>
       </section>
 
       <section class="section">
         <p class="section-label">Scene 03</p>
         <h2>身支度｜鏡の中の手が、どうしてもそろわなかった</h2>
-        <p class="section-intro">制服姿で鏡の前に立ち、髪を整えるシーンです。ここが今回いちばん難しかった。人物そのものより、鏡の中の手と実際の手をそろえることが難しかったです。</p>
+        <p class="section-intro">制服姿で鏡の前に立ち、髪を整える場面です。パジャマから制服へ変わることで、朝の時間が進んだことが分かるようにしました。</p>
         <figure class="wide-image-card">
           <img src="lesson12_ai-tutor_03_getting-ready-mirror-blazer.png" alt="制服姿で鏡の前に立ち髪を整える少年のアニメ画像" />
           <figcaption>GPT Image 2.0で、日本語プロンプトを使って生成したシーン3の静止画。</figcaption>
@@ -92,45 +87,43 @@
           <source src="026-07-20_scene3-mirror-video.mp4" type="video/mp4" />
         </video>
         <div class="note-list">
-          <article><h3>1回目</h3><p>実物の右手と鏡像の手で、位置や角度、動くタイミングが合っていませんでした。見れば分かる程度のズレだったので、シーン3だけ再生成しました。</p></article>
-          <article><h3>2回目</h3><p>英語プロンプトを調整して、片手で髪を整える小さな動きに絞りました。それでも、鏡像と実物の手の位置は完全には合いませんでした。</p></article>
-          <article class="highlight-note"><h3>ここで止めた理由</h3><p>この先もう一度生成しても、必ずよくなるとは限らない。それに、別の動画制作にもクレジットを残しておきたかったので、ここで止めました。顔、髪型、制服、動作の意味は保たれていたため、2回目の動画を採用しています。</p></article>
+          <article><h3>1回目</h3><p>鏡の中の手と実際の手で、位置、角度、動くタイミングが合っていませんでした。見れば分かるズレだったため、シーン3だけ再生成しました。</p></article>
+          <article><h3>2回目</h3><p>英語プロンプトを調整し、片手で髪を整える小さな動きへ絞りました。それでも、鏡像と実物の手は完全には一致しませんでした。</p></article>
+          <article class="highlight-note"><h3>ここで止めた理由</h3><p>もう一度生成しても必ず改善するとは限りません。それに、別の動画制作にもクレジットを残しておきたかったため、これ以上は生成しませんでした。顔、髪型、制服、動作の意味は保たれていたので、2回目を採用しています。</p></article>
         </div>
       </section>
 
       <section class="section">
-        <p class="section-label">Prompt Notes</p>
-        <h2>画像と動画で、プロンプトの言語を分けていた</h2>
-        <div class="note-list">
-          <article><h3>基準画像</h3><p>GPT Image 2.0で、英語プロンプトを使用。</p></article>
-          <article><h3>3枚のシーン画像</h3><p>GPT Image 2.0で、日本語プロンプトを使用。</p></article>
-          <article><h3>すべての動画</h3><p>再生成したシーン3も含めて、英語プロンプトを使用。1シーン1アクション、固定カメラ、控えめな動きを意識しました。</p></article>
+        <p class="section-label">Production Flow</p>
+        <h2>今回の制作フロー</h2>
+        <div class="codex-card-grid">
+          <article class="codex-card"><span class="codex-card-category">01</span><h3>キャラクター設定</h3><p>人物の年齢、髪型、服装、絵柄を決める。</p></article>
+          <article class="codex-card"><span class="codex-card-category">02</span><h3>基準画像</h3><p>同じ人物かを比較するための基準を作る。</p></article>
+          <article class="codex-card"><span class="codex-card-category">03</span><h3>シーン画像</h3><p>起床、朝食、身支度の3枚へ展開する。</p></article>
+          <article class="codex-card"><span class="codex-card-category">04</span><h3>動画生成</h3><p>1シーン1アクション、固定カメラ、控えめな動きで動画化する。</p></article>
+          <article class="codex-card"><span class="codex-card-category">05</span><h3>観察</h3><p>顔、髪型、服装、手、口元、背景の違和感を見る。</p></article>
+          <article class="codex-card"><span class="codex-card-category">06</span><h3>採用判断</h3><p>必要なら再生成し、品質とクレジットの両方から止めどきを決める。</p></article>
         </div>
       </section>
 
       <section class="section">
         <p class="section-label">What I Noticed</p>
         <h2>一貫性は、完全一致だけでは決まらない</h2>
-        <p class="section-intro">細かく見れば、目の大きさや口元、鏡像の手など、気になるところはあります。でも、同じ人物に見えるか、服装や髪型がつながっているか、何をしている場面か伝わるか。今回の3本では、そこをまず見ました。</p>
-        <div class="codex-card-grid">
-          <article class="codex-card"><span class="codex-card-category">01</span><h3>同じ人物に見えるか</h3><p>顔、髪型、年齢感、絵柄がシーンをまたいでもつながっているか。</p></article>
-          <article class="codex-card"><span class="codex-card-category">02</span><h3>場面の意味が伝わるか</h3><p>起床、朝食、身支度として自然に読めるか。</p></article>
-          <article class="codex-card"><span class="codex-card-category">03</span><h3>気になるズレは致命的か</h3><p>一瞬の違和感なのか、シーン全体を壊す破綻なのかを分けて見る。</p></article>
-          <article class="codex-card"><span class="codex-card-category">04</span><h3>どこで止めるか</h3><p>直したい気持ちだけでなく、改善する見込みとクレジット残量も含めて決める。</p></article>
-        </div>
+        <p class="section-intro">細かく見れば、目の大きさ、口元、鏡像の手など、気になるところはあります。でも、同じ人物に見えるか、服装や髪型がつながっているか、何をしている場面かが伝わるか。今回はそこをまず見ました。</p>
+        <p class="section-intro">鏡や反射は特に崩れやすく、細部の物理的な正しさだけを追い続けると、クレジットも時間も吸い込まれていきます。どこまでを許容範囲にするかを決めることも、制作の一部でした。</p>
       </section>
 
       <section class="section">
         <p class="section-label">Learning</p>
         <h2>生成したあとに、見て決めるところまでが制作だった</h2>
-        <p class="section-intro">今回残したかったのは、3本の動画だけではありません。違和感に気づいたこと、再生成したこと、それでも完全には直らなかったこと、そしてそこで止めたこと。そこまで全部、今の自分の制作ログだと思っています。</p>
+        <p class="section-intro">今回残したかったのは3本の動画だけではありません。違和感に気づいたこと、再生成したこと、それでも完全には直らなかったこと、そこで止めたこと。そこまで全部、今の自分の制作ログだと思っています。</p>
         <div class="note-list">
-          <article class="highlight-note"><h3>今回の一文</h3><p>生成AI動画は、たくさん作るほど正解に近づくとは限らない。見る、比べる、残す、止める。その判断も制作の中に入っている。</p></article>
-          <article class="paw-note"><h3>🐾 パウ所長の研究メモ</h3><p>鏡の中の手はそろわなかったけれど、Rika研究員の判断はそろっていたワン。全部直すより、何を残すか決められたことが今回の収穫だワン！</p></article>
+          <article class="highlight-note"><h3>今回の学び</h3><p>画像生成 → 動画生成 → 比較 → 判断。この順番で進めると、生成AI動画制作を整理しやすい。生成回数を増やすことより、目的に合う一本を選ぶ判断のほうが大きいと感じました。</p></article>
+          <article class="paw-note"><h3>🐾 パウ所長の研究メモ</h3><p>鏡は少し暴れたけれど、観察はちゃんと残ったワン。作る、見る、直す、止める。その全部が今回の作品だワン！</p></article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><p>🐾 Reviewed by パウ所長｜Rika Creative Codex</p></footer>
+    <footer class="site-footer"><p>このCodexは、好奇心と対話、そして創作を通して育っていきます。</p></footer>
   </body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026.07.20｜3シーンで同じ人物を保つ｜AI動画の一貫性と止めどき</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a class="logo" href="index.html">Rika Creative Codex</a>
+        <div class="nav-links">
+          <a href="index.html#learning-log-shelf">Learning Log</a>
+          <a href="index.html#research-cards">Research Cards</a>
+          <a href="index.html#learning-os">Learning OS</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Production Log｜2026.07.20</p>
+        <h1>3シーンで同じ人物を保つ｜AI動画の一貫性と「止めどき」を学んだ制作ログ</h1>
+        <p>基準となるキャラクターから、起床、朝食、身支度の3シーンを静止画と動画へ展開しました。完成品だけでなく、違和感の発見、再生成、比較、採用判断までを制作の一部として残します。</p>
+        <a class="primary-button" href="index.html">Codexへ戻る</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <p class="section-label">Overview</p>
+        <h2>同じ人物として認識できる3シーンを作る</h2>
+        <p class="section-intro">今回の目的は、派手な動きではなく、顔立ち、黒髪ショート、年齢感、アニメ調の絵柄を保ちながら、朝の時間が進んでいく3つの場面を成立させることでした。</p>
+        <div class="note-list">
+          <article><h3>固定するもの</h3><p>顔立ち、髪型、年齢感、絵柄、人物の印象。</p></article>
+          <article><h3>変えるもの</h3><p>パジャマと制服、寝室とリビングと鏡前、目覚め・食事・身支度という動作。</p></article>
+          <article class="highlight-note"><h3>制作方針</h3><p>1シーン1アクション、固定カメラ、控えめな動き。動画生成用のプロンプトは英語で作成しました。</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Character Reference</p>
+        <h2>基準となるキャラクターを先に決める</h2>
+        <p class="section-intro">最初に基準画像を作り、各シーンで「同じ人物に見えるか」を比較するための物差しにしました。</p>
+        <figure class="wide-image-card">
+          <img src="lesson12_ai-tutor_00_character-reference.png" alt="黒髪ショートでブレザー制服を着た日本人の少年キャラクター基準画像" />
+          <figcaption>顔立ち、髪型、年齢感、日本のアニメイラスト調を固定するための基準画像。</figcaption>
+        </figure>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Scene 01</p>
+        <h2>起床｜静かな朝を、崩さず呼吸させる</h2>
+        <p class="section-intro">紺色のパジャマ姿で窓辺に立ち、朝日を浴びるシーン。大きく動かさず、まばたきやカーテンの揺れで朝の空気を作りました。</p>
+        <figure class="wide-image-card">
+          <img src="lesson12_ai-tutor_01_wakeup-window-pajamas.png" alt="紺色のパジャマ姿で朝の窓辺に立つ少年のアニメ画像" />
+          <figcaption>シーン1の動画生成用静止画。</figcaption>
+        </figure>
+        <video controls playsinline preload="metadata" style="display:block;width:100%;max-width:920px;margin:28px auto;border-radius:20px;">
+          <source src="2026-07-20_scene1-wakeup-video.mp4" type="video/mp4" />
+        </video>
+        <div class="note-list"><article class="highlight-note"><h3>観察と判断</h3><p>顔、髪型、パジャマ、朝の室内は安定。終盤で目が少し大きく見える変化はありましたが、大きな破綻ではないため採用しました。</p></article></div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Scene 02</p>
+        <h2>朝食｜動きを絞ると、一貫性が残りやすい</h2>
+        <p class="section-intro">同じパジャマ姿のままリビングへ移動し、トーストを食べる場面を生成しました。場所は変えても人物の印象を維持することを優先しました。</p>
+        <figure class="wide-image-card">
+          <img src="lesson12_ai-tutor_02_breakfast-toast-pajamas.png" alt="紺色のパジャマ姿でリビングの朝食をとる少年のアニメ画像" />
+          <figcaption>シーン2の動画生成用静止画。</figcaption>
+        </figure>
+        <video controls playsinline preload="metadata" style="display:block;width:100%;max-width:920px;margin:28px auto;border-radius:20px;">
+          <source src="2026-07-20_scene2-breakfast-video.mp4" type="video/mp4" />
+        </video>
+        <div class="note-list"><article class="highlight-note"><h3>観察と判断</h3><p>人物、パジャマ、リビングの雰囲気は安定。口元とトーストの接触がわずかに曖昧な瞬間はあるものの、食事の意味は自然に伝わるため採用しました。</p></article></div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Scene 03</p>
+        <h2>身支度｜鏡像のズレと、再生成の止めどき</h2>
+        <p class="section-intro">制服姿で鏡の前に立ち、髪を整える場面です。鏡の中の手と実物の手を同期させることが、この制作で最も難しい部分になりました。</p>
+        <figure class="wide-image-card">
+          <img src="lesson12_ai-tutor_03_getting-ready-mirror-blazer.png" alt="制服姿で鏡の前に立ち髪を整える少年のアニメ画像" />
+          <figcaption>シーン3の動画生成用静止画。</figcaption>
+        </figure>
+        <video controls playsinline preload="metadata" style="display:block;width:100%;max-width:920px;margin:28px auto;border-radius:20px;">
+          <source src="026-07-20_scene3-mirror-video.mp4" type="video/mp4" />
+        </video>
+        <div class="note-list">
+          <article><h3>1回目</h3><p>実物の右手と鏡像の手で、位置、角度、動くタイミングにズレが見られました。</p></article>
+          <article><h3>2回目</h3><p>英語プロンプトを調整し、片手で髪を整える小さな動きへ絞って再生成しました。それでも鏡像と実物の手は完全には一致しませんでした。</p></article>
+          <article class="highlight-note"><h3>それ以上は生成しなかった</h3><p>顔、髪型、制服、動作の意味は保たれていました。また、別の動画制作にも生成クレジットを残す必要があったため、品質と消費量のバランスを考え、2回目を採用して再生成を止めました。</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Production Judgment</p>
+        <h2>完璧さではなく、目的に対して成立しているかを見る</h2>
+        <p class="section-intro">生成AIの出力は、細部を直そうとして再生成すると、別の場所が崩れることがあります。そのため「違和感があるか」だけでなく、「再生成で改善する見込み」「限られたクレジットをどこへ配分するか」も判断材料になりました。</p>
+        <div class="codex-card-grid">
+          <article class="codex-card"><span class="codex-card-category">01</span><h3>同じ人物に見えるか</h3><p>顔、髪型、年齢感、絵柄の連続性を確認する。</p></article>
+          <article class="codex-card"><span class="codex-card-category">02</span><h3>動作の意味が伝わるか</h3><p>細部の揺れがあっても、起床、朝食、身支度として読めるかを見る。</p></article>
+          <article class="codex-card"><span class="codex-card-category">03</span><h3>致命的な破綻か</h3><p>一瞬の軽微なズレと、シーン全体を壊す崩れを分けて考える。</p></article>
+          <article class="codex-card"><span class="codex-card-category">04</span><h3>止めどきを決める</h3><p>目的、品質、改善可能性、クレジット残量を合わせて採用を判断する。</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">Learning</p>
+        <h2>生成する力と同じくらい、見て決める力が必要だった</h2>
+        <p class="section-intro">今回の制作で残ったのは3本の動画だけではありません。基準を作り、違和感を見つけ、条件を絞り、再生成し、比較し、どこで止めるかを決める一連の判断も、制作物の一部でした。</p>
+        <div class="note-list">
+          <article class="highlight-note"><h3>今回の一文</h3><p>生成AI動画は、動かす競技というより、崩さず呼吸させる競技。そして制作の完成度は、生成回数ではなく、目的に合う一本を選べるかで決まる。</p></article>
+          <article class="paw-note"><h3>🐾 パウ所長の研究メモ</h3><p>鏡は少し暴れたけれど、観察眼は暴れなかったワン。直す、残す、止める。その三つを選べたことも立派な制作ログだワン！</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>🐾 Reviewed by パウ所長｜Rika Creative Codex</p></footer>
+  </body>
+</html>
